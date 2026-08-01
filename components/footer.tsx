@@ -34,7 +34,6 @@ const quickLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Product', href: '#equipment' },
   { label: 'Services', href: '#services' },
-  { label: 'Spares', href: '#spares' },
   { label: 'Rental', href: '#rental' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -77,7 +76,7 @@ export function Footer() {
               <div className="flex items-start gap-2 text-white/70">
                 <MapPin className="w-4 h-4 text-[#2dc5a2] flex-shrink-0 mt-0.5" />
                 <span className="whitespace-pre-line">
-                  {'Plot No 60\nJains Akshardham\nManapakam, Chennai – 600125\nTamil Nadu India'}
+                  {'NO-274, 8th Main\nBEML Layout, Thubarahalli\nWhitefield, Bangalore – 560066\nKarnataka, India'}
                 </span>
               </div>
               <a
@@ -213,7 +212,17 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Chamundeshwari Medical Systems Pvt. Ltd. – All
             rights Reserved
           </p>
-          <p>Website – Vishala Designs</p>
+          <p>
+            Designed by{' '}
+            <a
+              href="https://webel.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#2dc5a2] transition-colors"
+            >
+              Webelio
+            </a>
+          </p>
         </div>
       </div>
     </footer>

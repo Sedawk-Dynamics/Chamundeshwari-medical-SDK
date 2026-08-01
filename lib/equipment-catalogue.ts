@@ -328,6 +328,21 @@ export const equipmentCatalogue: EquipmentCard[] = [
     highlights: ['Daily / monthly plans', 'Delivery & installation', 'Swap guarantee'],
     inNav: false,
   },
+  {
+    slug: 'ambulance',
+    name: 'Ambulance Services',
+    navLabel: 'Ambulance',
+    group: 'services',
+    image: '/images/ambulance.jpg',
+    badges: ['Sale', 'Rental'],
+    desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
+    highlights: [
+      'Neonatal transport incubator',
+      'Onboard oxygen & suction',
+      'Stretcher & spine board',
+    ],
+    inNav: false,
+  },
 
   /* ── BiPAP (shown under "All" only — no dedicated tab) ─────────────── */
   {

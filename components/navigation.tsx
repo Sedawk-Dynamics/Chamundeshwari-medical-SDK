@@ -21,7 +21,6 @@ const navLinks: {
   // the "Equipment Built for Critical Care" section, so the two stay in sync.
   { label: 'Product', href: '#equipment', children: navProductLinks },
   { label: 'Services', href: '#services' },
-  { label: 'Spares', href: '#spares' },
   { label: 'Rental', href: '#rental' },
   { label: 'Contact', href: '#contact' },
 ]

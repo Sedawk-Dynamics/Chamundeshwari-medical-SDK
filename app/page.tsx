@@ -5,7 +5,6 @@ import { MequbeHighlights } from '@/components/meqube-highlights'
 import { MissionVision } from '@/components/mission-vision'
 import { CriticalCareEquipment } from '@/components/critical-care-equipment'
 import { Services } from '@/components/services'
-import { Spares } from '@/components/spares'
 import { Rental } from '@/components/rental'
 import { WhyUs } from '@/components/why-us'
 import { ExpertServices } from '@/components/expert-services'
@@ -29,7 +28,6 @@ export default function HomePage() {
         {/* Products & Services — "Equipment Built for Critical Care" (ICU / NICU / OT / Services) */}
         <CriticalCareEquipment />
         <Services />
-        <Spares />
         <Rental />
         {/* Original — "Your Trusted Partner in Critical-Care Equipment" */}
         <WhyUs />
