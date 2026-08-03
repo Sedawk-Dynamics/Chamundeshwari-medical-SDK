@@ -343,6 +343,22 @@ export const equipmentCatalogue: EquipmentCard[] = [
     ],
     inNav: false,
   },
+  {
+    slug: 'home-care',
+    name: 'Home Care Solutions',
+    navLabel: 'Home Care',
+    group: 'services',
+    // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
+    image: '/images/hero-icu.png',
+    badges: ['Sale', 'Rental'],
+    desc: 'Hospital-grade equipment set up in the patient’s own home — oxygen concentrators, BiPAP/CPAP units, hospital beds and monitors, delivered, installed and serviced.',
+    highlights: [
+      'Delivery & home installation',
+      'Oxygen, BiPAP & hospital beds',
+      'On-call service support',
+    ],
+    inNav: false,
+  },
 
   /* ── BiPAP (shown under "All" only — no dedicated tab) ─────────────── */
   {
