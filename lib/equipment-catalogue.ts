@@ -5,7 +5,7 @@
 // Deep model-level listings per category live in `lib/meqube-data.ts`; the
 // `catalogueSlug` field points a card at its matching category there.
 
-export type EquipmentGroup = 'icu' | 'nicu' | 'ot' | 'services' | 'bipap'
+export type EquipmentGroup = 'icu' | 'nicu' | 'ot' |"ambulance-setup"| "home-care-services"| "refurb-equipments"|'services' | 'bipap'
 
 export interface EquipmentCard {
   /** Stable id — also used as the card's DOM id (`equipment-<slug>`). */
