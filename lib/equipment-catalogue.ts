@@ -5,7 +5,7 @@
 // Deep model-level listings per category live in `lib/meqube-data.ts`; the
 // `catalogueSlug` field points a card at its matching category there.
 
-export type EquipmentGroup = 'icu' | 'nicu' | 'ot' | 'services' | 'bipap'
+export type EquipmentGroup = 'icu' | 'nicu' | 'ot' |"ambulance-setup"| "home-care-services"| "refurb-equipments"|'services' | 'bipap'
 
 export interface EquipmentCard {
   /** Stable id — also used as the card's DOM id (`equipment-<slug>`). */
@@ -30,6 +30,9 @@ export const equipmentGroups: { key: EquipmentGroup | 'all'; label: string }[] =
   { key: 'icu', label: 'ICU' },
   { key: 'nicu', label: 'NICU' },
   { key: 'ot', label: 'OT' },
+  { key: "ambulance-setup", label: "Ambulance Setup" },
+  { key: "home-care-services", label: "Home Care Services" },
+  { key: "refurb-equipments", label: "Refurb Equipments" },
   { key: 'services', label: 'Services' },
 ]
 
@@ -304,6 +307,139 @@ export const equipmentCatalogue: EquipmentCard[] = [
     catalogueSlug: 'injector',
     inNav: true,
   },
+  
+  /* ── Ambulance Setup ───────────────────────────────────────────────────────── */
+  {
+    slug: 'ambulance',
+    name: 'Ambulance Setup',
+    navLabel: 'Ambulance',
+    group: 'ambulance-setup',
+    image: '/images/ambulance.jpg',
+    badges: ['Sale', 'Rental'],
+    desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
+    highlights: [
+      'Neonatal transport incubator',
+      'Onboard oxygen & suction',
+      'Stretcher & spine board',
+    ],
+    inNav: false,
+  },
+
+  /* ── Home Care Services ───────────────────────────────────────────────────────── */
+  {
+    slug: 'home-care',
+    name: 'Home Care Services',
+    navLabel: 'Home Care',
+    group: 'home-care-services',
+    // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
+    image: '/images/hero-icu.png',
+    badges: ['Sale', 'Rental'],
+    desc: 'Hospital-grade equipment set up in the patient’s own home — oxygen concentrators, BiPAP/CPAP units, hospital beds and monitors, delivered, installed and serviced.',
+    highlights: [
+      'Delivery & home installation',
+      'Oxygen, BiPAP & hospital beds',
+      'On-call service support',
+    ],
+    inNav: false,
+  },
+
+  /* ── Refurb Equipments ───────────────────────────────────────────────────────── */
+  {
+    slug: "neonatal-incubator",
+    name: "Neonatal Incubator",
+    navLabel: "Infant Incubator",
+    group: "refurb-equipments",
+    image: "/images/refurb-1.jpeg",
+    badges: ["Sale", "Rental"],
+    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    highlights: [
+      "Servo control ±0.1°C",
+      "Phototherapy compatible",
+      "Integrated SpO2 probe",
+    ],
+    catalogueSlug: "infant-incubator",
+    inNav: true,
+  },
+  {
+    slug: "neonatal-incubator",
+    name: "Neonatal Incubator",
+    navLabel: "Infant Incubator",
+    group: "refurb-equipments",
+    image: "/images/refurb-2.jpeg",
+    badges: ["Sale", "Rental"],
+    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    highlights: [
+      "Servo control ±0.1°C",
+      "Phototherapy compatible",
+      "Integrated SpO2 probe",
+    ],
+    catalogueSlug: "infant-incubator",
+    inNav: true,
+  },
+  {
+    slug: "neonatal-incubator",
+    name: "Neonatal Incubator",
+    navLabel: "Infant Incubator",
+    group: "refurb-equipments",
+    image: "/images/refurb-3.jpeg",
+    badges: ["Sale", "Rental"],
+    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    highlights: [
+      "Servo control ±0.1°C",
+      "Phototherapy compatible",
+      "Integrated SpO2 probe",
+    ],
+    catalogueSlug: "infant-incubator",
+    inNav: true,
+  },
+  {
+    slug: "neonatal-incubator",
+    name: "Neonatal Incubator",
+    navLabel: "Infant Incubator",
+    group: "refurb-equipments",
+    image: "/images/refurb-4.jpeg",
+    badges: ["Sale", "Rental"],
+    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    highlights: [
+      "Servo control ±0.1°C",
+      "Phototherapy compatible",
+      "Integrated SpO2 probe",
+    ],
+    catalogueSlug: "infant-incubator",
+    inNav: true,
+  },
+  {
+    slug: "neonatal-incubator",
+    name: "Neonatal Incubator",
+    navLabel: "Infant Incubator",
+    group: "refurb-equipments",
+    image: "/images/refurb-5.jpeg",
+    badges: ["Sale", "Rental"],
+    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    highlights: [
+      "Servo control ±0.1°C",
+      "Phototherapy compatible",
+      "Integrated SpO2 probe",
+    ],
+    catalogueSlug: "infant-incubator",
+    inNav: true,
+  },
+  {
+    slug: "neonatal-incubator",
+    name: "Neonatal Incubator",
+    navLabel: "Infant Incubator",
+    group: "refurb-equipments",
+    image: "/images/refurb-6.jpeg",
+    badges: ["Sale", "Rental"],
+    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    highlights: [
+      "Servo control ±0.1°C",
+      "Phototherapy compatible",
+      "Integrated SpO2 probe",
+    ],
+    catalogueSlug: "infant-incubator",
+    inNav: true,
+  },
 
   /* ── Services ───────────────────────────────────────────────────────── */
   {
@@ -326,37 +462,6 @@ export const equipmentCatalogue: EquipmentCard[] = [
     badges: ['Rental'],
     desc: 'Flexible short- and long-term rental of critical-care equipment — ideal for capacity expansion or trial before purchase.',
     highlights: ['Daily / monthly plans', 'Delivery & installation', 'Swap guarantee'],
-    inNav: false,
-  },
-  {
-    slug: 'ambulance',
-    name: 'Ambulance Services',
-    navLabel: 'Ambulance',
-    group: 'services',
-    image: '/images/ambulance.jpg',
-    badges: ['Sale', 'Rental'],
-    desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
-    highlights: [
-      'Neonatal transport incubator',
-      'Onboard oxygen & suction',
-      'Stretcher & spine board',
-    ],
-    inNav: false,
-  },
-  {
-    slug: 'home-care',
-    name: 'Home Care Solutions',
-    navLabel: 'Home Care',
-    group: 'services',
-    // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
-    image: '/images/hero-icu.png',
-    badges: ['Sale', 'Rental'],
-    desc: 'Hospital-grade equipment set up in the patient’s own home — oxygen concentrators, BiPAP/CPAP units, hospital beds and monitors, delivered, installed and serviced.',
-    highlights: [
-      'Delivery & home installation',
-      'Oxygen, BiPAP & hospital beds',
-      'On-call service support',
-    ],
     inNav: false,
   },
 
