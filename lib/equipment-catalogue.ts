@@ -307,6 +307,41 @@ export const equipmentCatalogue: EquipmentCard[] = [
     catalogueSlug: 'injector',
     inNav: true,
   },
+  
+  /* ── Ambulance Setup ───────────────────────────────────────────────────────── */
+  {
+    slug: 'ambulance',
+    name: 'Ambulance Setup',
+    navLabel: 'Ambulance',
+    group: 'ambulance-setup',
+    image: '/images/ambulance.jpg',
+    badges: ['Sale', 'Rental'],
+    desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
+    highlights: [
+      'Neonatal transport incubator',
+      'Onboard oxygen & suction',
+      'Stretcher & spine board',
+    ],
+    inNav: false,
+  },
+
+  /* ── Home Care Services ───────────────────────────────────────────────────────── */
+  {
+    slug: 'home-care',
+    name: 'Home Care Services',
+    navLabel: 'Home Care',
+    group: 'home-care-services',
+    // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
+    image: '/images/hero-icu.png',
+    badges: ['Sale', 'Rental'],
+    desc: 'Hospital-grade equipment set up in the patient’s own home — oxygen concentrators, BiPAP/CPAP units, hospital beds and monitors, delivered, installed and serviced.',
+    highlights: [
+      'Delivery & home installation',
+      'Oxygen, BiPAP & hospital beds',
+      'On-call service support',
+    ],
+    inNav: false,
+  },
 
   /* ── Services ───────────────────────────────────────────────────────── */
   {
@@ -329,37 +364,6 @@ export const equipmentCatalogue: EquipmentCard[] = [
     badges: ['Rental'],
     desc: 'Flexible short- and long-term rental of critical-care equipment — ideal for capacity expansion or trial before purchase.',
     highlights: ['Daily / monthly plans', 'Delivery & installation', 'Swap guarantee'],
-    inNav: false,
-  },
-  {
-    slug: 'ambulance',
-    name: 'Ambulance Services',
-    navLabel: 'Ambulance',
-    group: 'ambulance-setup',
-    image: '/images/ambulance.jpg',
-    badges: ['Sale', 'Rental'],
-    desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
-    highlights: [
-      'Neonatal transport incubator',
-      'Onboard oxygen & suction',
-      'Stretcher & spine board',
-    ],
-    inNav: false,
-  },
-  {
-    slug: 'home-care',
-    name: 'Home Care Solutions',
-    navLabel: 'Home Care',
-    group: 'home-care-services',
-    // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
-    image: '/images/hero-icu.png',
-    badges: ['Sale', 'Rental'],
-    desc: 'Hospital-grade equipment set up in the patient’s own home — oxygen concentrators, BiPAP/CPAP units, hospital beds and monitors, delivered, installed and serviced.',
-    highlights: [
-      'Delivery & home installation',
-      'Oxygen, BiPAP & hospital beds',
-      'On-call service support',
-    ],
     inNav: false,
   },
 
