@@ -335,7 +335,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     slug: 'ambulance',
     name: 'Ambulance Services',
     navLabel: 'Ambulance',
-    group: 'services',
+    group: 'ambulance-setup',
     image: '/images/ambulance.jpg',
     badges: ['Sale', 'Rental'],
     desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
@@ -350,7 +350,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     slug: 'home-care',
     name: 'Home Care Solutions',
     navLabel: 'Home Care',
-    group: 'services',
+    group: 'home-care-services',
     // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
     image: '/images/hero-icu.png',
     badges: ['Sale', 'Rental'],
