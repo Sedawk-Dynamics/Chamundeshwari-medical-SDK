@@ -325,9 +325,9 @@ export const equipmentCatalogue: EquipmentCard[] = [
     inNav: false,
   },
   {
-    slug: 'ambulance',
-    name: 'Ambulance Setup',
-    navLabel: 'Ambulance',
+    slug: 'infant-resuscitator',
+    name: 'Infant Resuscitator',
+    navLabel: 'Infant Resuscitator',
     group: 'ambulance-setup',
     image: '/images/ambulance-2.jpeg',
     badges: ['Sale', 'Rental'],
