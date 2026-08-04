@@ -445,19 +445,19 @@ export const equipmentCatalogue: EquipmentCard[] = [
     inNav: false,
   },
 
-  /* ── Home Care Services ───────────────────────────────────────────────────────── */
+  /* ── Home ICU Setup ───────────────────────────────────────────────────────── */
   {
-    slug: 'home-care',
-    name: 'Home Care Services',
-    navLabel: 'Home Care',
+    slug: 'home-icu-setup',
+    name: 'Home ICU Setup',
+    navLabel: 'Home ICU Setup',
     group: 'home-icu-setup',
     // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
     image: '/images/hero-icu.png',
     badges: ['Sale', 'Rental'],
-    desc: 'Hospital-grade equipment set up in the patient’s own home — oxygen concentrators and oxygen cylinders, BiPAP/CPAP units, hospital beds and monitors, delivered, installed and serviced.',
+    desc: 'Hospital-grade equipment set up in the patient’s own home — oxygen concentrators, BiPAP/CPAP units, hospital beds and monitors, delivered, installed and serviced.',
     highlights: [
       'Delivery & home installation',
-      'Oxygen, BiPAP & hospital beds',
+      'Oxygen concentrators and oxygen cylinders, BiPAP & hospital beds',
       'On-call service support',
     ],
     inNav: false,
