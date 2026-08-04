@@ -340,9 +340,9 @@ export const equipmentCatalogue: EquipmentCard[] = [
     inNav: false,
   },
   {
-    slug: 'ambulance',
-    name: 'Ambulance Setup',
-    navLabel: 'Ambulance',
+    slug: 'ltv-950-transport-ventilator',
+    name: 'Ltv 950 transport ventilator',
+    navLabel: 'Ltv 950 transport ventilator',
     group: 'ambulance-setup',
     image: '/images/ambulance-3.jpeg',
     badges: ['Sale', 'Rental'],
