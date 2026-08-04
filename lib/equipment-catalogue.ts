@@ -554,8 +554,8 @@ export const equipmentCatalogue: EquipmentCard[] = [
   inNav: true
 },
   {
-  slug: "bubble-cpap",
-  name: "Bubble CPAP System",
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
   navLabel: "Bubble CPAP",
   group: "refurb-equipments",
   image: "/images/refurb-8.jpeg",
@@ -566,12 +566,12 @@ export const equipmentCatalogue: EquipmentCard[] = [
     "Precise pressure regulation via water column generator",
     "Gentle chest wall oscillations for improved gas exchange"
   ],
-  catalogueSlug: "bubble-cpap",
+  catalogueSlug: "branded-refurb-equipments",
   inNav: true
 },
   {
-  slug: "bubble-cpap",
-  name: "Bubble CPAP System",
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
   navLabel: "Bubble CPAP",
   group: "refurb-equipments",
   image: "/images/refurb-9.jpeg",
@@ -582,12 +582,12 @@ export const equipmentCatalogue: EquipmentCard[] = [
     "Precise pressure regulation via water column generator",
     "Gentle chest wall oscillations for improved gas exchange"
   ],
-  catalogueSlug: "bubble-cpap",
+  catalogueSlug: "branded-refurb-equipments",
   inNav: true
 },
   {
-  slug: "bubble-cpap",
-  name: "Bubble CPAP System",
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
   navLabel: "Bubble CPAP",
   group: "refurb-equipments",
   image: "/images/refurb-10.jpeg",
@@ -598,12 +598,12 @@ export const equipmentCatalogue: EquipmentCard[] = [
     "Precise pressure regulation via water column generator",
     "Gentle chest wall oscillations for improved gas exchange"
   ],
-  catalogueSlug: "bubble-cpap",
+  catalogueSlug: "branded-refurb-equipments",
   inNav: true
 },
   {
-  slug: "bubble-cpap",
-  name: "Bubble CPAP System",
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
   navLabel: "Bubble CPAP",
   group: "refurb-equipments",
   image: "/images/refurb-11.jpeg",
@@ -614,7 +614,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     "Precise pressure regulation via water column generator",
     "Gentle chest wall oscillations for improved gas exchange"
   ],
-  catalogueSlug: "bubble-cpap",
+  catalogueSlug: "branded-refurb-equipments",
   inNav: true
 },
 
