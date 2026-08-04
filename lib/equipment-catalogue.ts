@@ -505,6 +505,22 @@ export const equipmentCatalogue: EquipmentCard[] = [
     catalogueSlug: "air-liquide-monnal-t75",
     inNav: true
   },
+  {
+  slug: "bubble-cpap",
+  name: "Bubble CPAP System",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-7.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "bubble-cpap",
+  inNav: true
+},
 
   /* ── Services ───────────────────────────────────────────────────────── */
   {
