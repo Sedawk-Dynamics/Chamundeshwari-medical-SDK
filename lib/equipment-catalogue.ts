@@ -405,6 +405,22 @@ export const equipmentCatalogue: EquipmentCard[] = [
     catalogueSlug: 'syringe-pump',
     inNav: false,
   },
+  {
+    slug: 'suction-machine',
+    name: 'Suction Machine',
+    navLabel: 'Infusion Suction Machine',
+    group: 'ambulance-setup',
+    image: '/images/ambulance-7.jpeg',
+    badges: ['Sale', 'Rental'],
+    desc: 'Integrated portable suction and precision fluid infusion unit designed for continuous airway clearing and accurate medication delivery on the move.',
+    highlights: [
+      'High-vacuum emergency suction unit',
+      'Micro-infusion precision rate control',
+      'Rechargeable battery for mobile operation',
+    ],
+    catalogueSlug: 'suction-machine',
+    inNav: false,
+  },
 
   /* ── Home Care Services ───────────────────────────────────────────────────────── */
   {
