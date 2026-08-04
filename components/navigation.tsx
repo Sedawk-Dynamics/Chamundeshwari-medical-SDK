@@ -66,11 +66,11 @@ export function Navigation() {
       {/* Top utility bar */}
       <div className="hidden md:flex items-center justify-end gap-6 bg-[#0d2260] text-white text-sm px-8 py-2">
         <a
-          href="mailto:sales@meqube.com"
+          href="mailto:support@mrlmedisystems.com"
           className="flex items-center gap-1.5 hover:text-[#2dc5a2] transition-colors"
         >
           <Mail className="w-3.5 h-3.5" />
-          sales@meqube.com
+          support@mrlmedisystems.com
         </a>
         <a
           href="tel:+918970300900"
@@ -257,14 +257,11 @@ export function Navigation() {
                   Call Us
                 </a>
                 <div className="mt-3 pt-3 border-t border-gray-100 flex flex-col gap-2 text-sm text-slate-600">
-                  <a href="mailto:sales@meqube.com" className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 text-[#2dc5a2]" /> sales@meqube.com
+                  <a href="mailto:support@mrlmedisystems.com" className="flex items-center gap-2">
+                    <Mail className="w-4 h-4 text-[#2dc5a2]" /> support@mrlmedisystems.com
                   </a>
-                  <a href="tel:+918220618897" className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-[#2dc5a2]" /> +91 822 061 8897
-                  </a>
-                  <a href="tel:+918807552331" className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-[#2dc5a2]" /> +91 880 755 2331
+                  <a href="tel:+918970300900" className="flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-[#2dc5a2]" /> +91 8970 300 900
                   </a>
                 </div>
               </div>
