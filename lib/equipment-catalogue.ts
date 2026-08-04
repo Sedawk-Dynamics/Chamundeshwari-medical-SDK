@@ -405,6 +405,22 @@ export const equipmentCatalogue: EquipmentCard[] = [
     catalogueSlug: 'syringe-pump',
     inNav: false,
   },
+  {
+    slug: 'suction-machine',
+    name: 'Suction Machine',
+    navLabel: 'Suction Machine',
+    group: 'ambulance-setup',
+    image: '/images/ambulance-7.jpeg',
+    badges: ['Sale', 'Rental'],
+    desc: 'Integrated portable suction and precision fluid infusion unit designed for continuous airway clearing and accurate medication delivery on the move.',
+    highlights: [
+      'High-vacuum emergency suction unit',
+      'Micro-infusion precision rate control',
+      'Rechargeable battery for mobile operation',
+    ],
+    catalogueSlug: 'suction-machine',
+    inNav: false,
+  },
 
   /* ── Home Care Services ───────────────────────────────────────────────────────── */
   {
@@ -537,6 +553,70 @@ export const equipmentCatalogue: EquipmentCard[] = [
   catalogueSlug: "bubble-cpap",
   inNav: true
 },
+  {
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-8.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "branded-refurb-equipments",
+  inNav: true
+},
+  {
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-9.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "branded-refurb-equipments",
+  inNav: true
+},
+  {
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-10.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "branded-refurb-equipments",
+  inNav: true
+},
+  {
+  slug: "branded-refurb-equipments",
+  name: "Branded Refurb Equipments",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-11.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "branded-refurb-equipments",
+  inNav: true
+},
 
   /* ── Services ───────────────────────────────────────────────────────── */
   {
@@ -564,23 +644,23 @@ export const equipmentCatalogue: EquipmentCard[] = [
 
   /* ── BiPAP (shown under "All" only — no dedicated tab) ─────────────── */
   {
-    slug: 'bmc-bipap',
-    name: 'BMC BiPAP',
-    navLabel: 'BMC BiPAP',
+    slug: 'bmc-bipap/cpap',
+    name: 'BMC BiPAP/CPAP',
+    navLabel: 'BMC BiPAP/CPAP',
     group: 'bipap',
     image: '/images/meqube/products/Resmed-Stellar-100.jpg',
-    badges: ['Sale'],
+    badges: ['Sale','Rental'],
     desc: 'Bi-level positive airway pressure therapy device for non-invasive respiratory support at home or in hospital.',
     highlights: ['Dual pressure support', 'Compact & portable', 'Comfort breathing modes'],
     inNav: false,
   },
   {
-    slug: 'philips-bipap',
-    name: 'Philips BiPAP',
-    navLabel: 'Philips BiPAP',
+    slug: 'philips-bipap/cpap',
+    name: 'Philips BiPAP/CPAP',
+    navLabel: 'Philips BiPAP/CPAP',
     group: 'bipap',
     image: '/images/meqube/products/PHILIPS-RESPRONICS-SYSTEM-ONE.jpg',
-    badges: ['Sale'],
+    badges: ['Sale','Rental'],
     desc: 'Philips Respironics bi-level therapy system delivering reliable non-invasive ventilatory support with adaptive comfort features.',
     highlights: ['Auto-adjusting pressure', 'Integrated humidification', 'Quiet operation'],
     inNav: false,
