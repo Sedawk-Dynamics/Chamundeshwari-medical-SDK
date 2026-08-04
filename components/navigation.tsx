@@ -172,7 +172,7 @@ export function Navigation() {
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+918220618897"
+              href="tel:+918970300900"
               className="inline-flex items-center gap-2 bg-[#1b3a8a] hover:bg-[#0d2260] text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all hover:shadow-lg hover:shadow-[#1b3a8a]/30 hover:-translate-y-0.5"
             >
               <Phone className="w-4 h-4" />
