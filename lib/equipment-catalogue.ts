@@ -453,21 +453,21 @@ export const equipmentCatalogue: EquipmentCard[] = [
     inNav: true
   },
   {
-    slug: "branded-icu-refurb-ventilators",
-    name: "Branded ICU Refurb Ventilators",
-    navLabel: "Refurbished ICU Ventilator",
-    group: "refurb-equipments",
-    image: "/images/refurb-4.jpeg",
-    badges: ["Sale", "Rental"],
-    desc: "Fully restored and calibrated critical care ventilators from top brands, providing high-reliability performance at a fraction of the cost.",
-    highlights: [
-      "Comprehensively tested & calibrated",
-      "Supports Volume, Pressure & Support modes",
-      "Cost-effective solution for ICU setups"
-    ],
-    catalogueSlug: "branded-icu-refurb-ventilators",
-    inNav: true
-  },
+  slug: "phillips-v200",
+  name: "Philips V200 Ventilator",
+  navLabel: "Philips V200",
+  group: "refurb-equipments",
+  image: "/images/refurb-4.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "High-performance critical care ventilator offering advanced respiratory support across invasive and non-invasive modes for pediatric to adult ICU patients.",
+  highlights: [
+    "Auto-Trak digital leak compensation",
+    "Seamless invasive & non-invasive (NIV) switching",
+    "Comprehensive real-time breath waveforms"
+  ],
+  catalogueSlug: "phillips-v200",
+  inNav: true
+},
   {
     slug: "hamilton-galileo-ventilator",
     name: "Hamilton Galileo Ventilator",
