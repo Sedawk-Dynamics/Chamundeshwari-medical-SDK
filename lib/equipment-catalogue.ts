@@ -5,7 +5,7 @@
 // Deep model-level listings per category live in `lib/meqube-data.ts`; the
 // `catalogueSlug` field points a card at its matching category there.
 
-export type EquipmentGroup = 'icu' | 'nicu' | 'ot' |"ambulance-setup"| "home-care-services"| "refurb-equipments"|'services' | 'bipap'
+export type EquipmentGroup = 'icu' | 'nicu' | 'ot' | "ambulance-setup" | "home-care-services" | "refurb-equipments" | 'services' | 'bipap'
 
 export interface EquipmentCard {
   /** Stable id — also used as the card's DOM id (`equipment-<slug>`). */
@@ -307,7 +307,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     catalogueSlug: 'injector',
     inNav: true,
   },
-  
+
   /* ── Ambulance Setup ───────────────────────────────────────────────────────── */
   {
     slug: 'ambulance',
@@ -345,8 +345,8 @@ export const equipmentCatalogue: EquipmentCard[] = [
 
   /* ── Refurb Equipments ───────────────────────────────────────────────────────── */
   {
-    slug: "neonatal-incubator",
-    name: "Neonatal Incubator",
+    slug: "branded-ICU-refurb-ventilators",
+    name: "Branded ICU Refurb ventilators",
     navLabel: "Infant Incubator",
     group: "refurb-equipments",
     image: "/images/refurb-1.jpeg",
@@ -361,8 +361,8 @@ export const equipmentCatalogue: EquipmentCard[] = [
     inNav: true,
   },
   {
-    slug: "neonatal-incubator",
-    name: "Neonatal Incubator",
+    slug: "drager-baby-log-8000",
+    name: "Drager baby log 8000",
     navLabel: "Infant Incubator",
     group: "refurb-equipments",
     image: "/images/refurb-2.jpeg",
@@ -377,8 +377,8 @@ export const equipmentCatalogue: EquipmentCard[] = [
     inNav: true,
   },
   {
-    slug: "neonatal-incubator",
-    name: "Neonatal Incubator",
+    slug: "anesthesia-workstation",
+    name: "Anesthesia workstation",
     navLabel: "Infant Incubator",
     group: "refurb-equipments",
     image: "/images/refurb-3.jpeg",
@@ -393,8 +393,8 @@ export const equipmentCatalogue: EquipmentCard[] = [
     inNav: true,
   },
   {
-    slug: "neonatal-incubator",
-    name: "Neonatal Incubator",
+    slug: "branded-ICU-refurb-ventilators",
+    name: "Branded ICU Refurb ventilators",
     navLabel: "Infant Incubator",
     group: "refurb-equipments",
     image: "/images/refurb-4.jpeg",

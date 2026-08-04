@@ -73,18 +73,11 @@ export function Navigation() {
           sales@meqube.com
         </a>
         <a
-          href="tel:+918220618897"
+          href="tel:+918970300900"
           className="flex items-center gap-1.5 hover:text-[#2dc5a2] transition-colors"
         >
           <Phone className="w-3.5 h-3.5" />
-          +91 822 061 8897
-        </a>
-        <a
-          href="tel:+918807552331"
-          className="flex items-center gap-1.5 hover:text-[#2dc5a2] transition-colors"
-        >
-          <Phone className="w-3.5 h-3.5" />
-          +91 880 755 2331
+          +91 8970 300 900
         </a>
       </div>
 
