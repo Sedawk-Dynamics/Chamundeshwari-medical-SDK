@@ -30,9 +30,9 @@ export const equipmentGroups: { key: EquipmentGroup | 'all'; label: string }[] =
   { key: 'icu', label: 'ICU' },
   { key: 'nicu', label: 'NICU' },
   { key: 'ot', label: 'OT' },
+  { key: "refurb-equipments", label: "Refurb Equipments" },
   { key: "ambulance-setup", label: "Ambulance Setup" },
   { key: "home-care-services", label: "Home Care Services" },
-  { key: "refurb-equipments", label: "Refurb Equipments" },
   { key: 'services', label: 'Services' },
 ]
 
