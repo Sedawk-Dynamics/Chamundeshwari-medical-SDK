@@ -408,7 +408,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
   {
     slug: 'suction-machine',
     name: 'Suction Machine',
-    navLabel: 'Infusion Suction Machine',
+    navLabel: 'Suction Machine',
     group: 'ambulance-setup',
     image: '/images/ambulance-7.jpeg',
     badges: ['Sale', 'Rental'],
