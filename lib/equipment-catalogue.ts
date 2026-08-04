@@ -648,7 +648,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     name: 'BMC BiPAP/CPAP',
     navLabel: 'BMC BiPAP/CPAP',
     group: 'bipap',
-    image: '/images/meqube/products/bmc-bipap.jpg',
+    image: '/images/meqube/products/bmc-bipap.jpeg',
     badges: ['Sale','Rental'],
     desc: 'Bi-level positive airway pressure therapy device for non-invasive respiratory support at home or in hospital.',
     highlights: ['Dual pressure support', 'Compact & portable', 'Comfort breathing modes'],
