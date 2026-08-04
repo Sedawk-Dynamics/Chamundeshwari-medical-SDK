@@ -329,7 +329,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     name: 'Ambulance Setup',
     navLabel: 'Ambulance',
     group: 'ambulance-setup',
-    image: '/images/ambulance-1.jpg',
+    image: '/images/ambulance-2.jpeg',
     badges: ['Sale', 'Rental'],
     desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
     highlights: [
@@ -344,7 +344,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     name: 'Ambulance Setup',
     navLabel: 'Ambulance',
     group: 'ambulance-setup',
-    image: '/images/ambulance-1.jpg',
+    image: '/images/ambulance-3.jpeg',
     badges: ['Sale', 'Rental'],
     desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
     highlights: [
@@ -359,7 +359,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     name: 'Ambulance Setup',
     navLabel: 'Ambulance',
     group: 'ambulance-setup',
-    image: '/images/ambulance-1.jpg',
+    image: '/images/ambulance-4.jpeg',
     badges: ['Sale', 'Rental'],
     desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
     highlights: [
@@ -374,7 +374,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     name: 'Ambulance Setup',
     navLabel: 'Ambulance',
     group: 'ambulance-setup',
-    image: '/images/ambulance-1.jpg',
+    image: '/images/ambulance-5.jpeg',
     badges: ['Sale', 'Rental'],
     desc: 'Fully fitted ambulances for critical-care and neonatal transfers — equipped with transport incubator, multi-parameter monitor, oxygen, suction and stretcher systems.',
     highlights: [
