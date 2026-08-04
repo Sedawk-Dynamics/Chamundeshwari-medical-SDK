@@ -345,101 +345,102 @@ export const equipmentCatalogue: EquipmentCard[] = [
 
   /* ── Refurb Equipments ───────────────────────────────────────────────────────── */
   {
-    slug: "ge-engstrom-care-station",
-    name: "GE Engstrom Care Station",
-    navLabel: "Infant Incubator",
+    slug: "ge-engstrom-carestation",
+    name: "GE Engstrom Carestation",
+    navLabel: "GE Engstrom Carestation",
     group: "refurb-equipments",
     image: "/images/refurb-1.jpeg",
     badges: ["Sale", "Rental"],
-    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    desc: "Advanced ICU ventilator delivering precise ventilation for neonatal to adult patients with integrated gas monitoring and flexible clinical workflows.",
     highlights: [
-      "Servo control ±0.1°C",
-      "Phototherapy compatible",
-      "Integrated SpO2 probe",
+      "Advanced lung protection tools",
+      "Integrated airway & gas monitoring",
+      "Seamless patient transport capabilities"
     ],
-    catalogueSlug: "infant-incubator",
-    inNav: true,
+    catalogueSlug: "ge-engstrom-carestation",
+    inNav: true
   },
   {
-    slug: "drager-baby-log-8000",
-    name: "Drager baby log 8000",
-    navLabel: "Infant Incubator",
+    slug: "schiller-graphnet-ventilator",
+    name: "Schiller GraphNet Ventilator",
+    navLabel: "Schiller GraphNet Ventilator",
     group: "refurb-equipments",
     image: "/images/refurb-2.jpeg",
     badges: ["Sale", "Rental"],
-    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    desc: "Versatile ICU ventilator featuring clear graphic monitoring, invasive and non-invasive modes, and specialized settings for pediatric and adult care.",
     highlights: [
-      "Servo control ±0.1°C",
-      "Phototherapy compatible",
-      "Integrated SpO2 probe",
+      "12-inch high-resolution touch display",
+      "Invasive and Non-Invasive (NIV) modes",
+      "Integrated real-time graphics & trends"
     ],
-    catalogueSlug: "infant-incubator",
-    inNav: true,
+    catalogueSlug: "schiller-graphnet-ventilator",
+    inNav: true
   },
   {
     slug: "anesthesia-workstation",
-    name: "Anesthesia workstation",
-    navLabel: "Infant Incubator",
+    name: "Anesthesia Workstation",
+    navLabel: "Anesthesia Workstation",
     group: "refurb-equipments",
     image: "/images/refurb-3.jpeg",
     badges: ["Sale", "Rental"],
-    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    desc: "Comprehensive anesthesia delivery system equipped with integrated ventilation, gas metering, and patient monitoring for operating rooms.",
     highlights: [
-      "Servo control ±0.1°C",
-      "Phototherapy compatible",
-      "Integrated SpO2 probe",
+      "Integrated ventilator & vaporizer system",
+      "Precise fresh gas delivery controls",
+      "Built-in safety alarm protocols"
     ],
-    catalogueSlug: "infant-incubator",
-    inNav: true,
+    catalogueSlug: "anesthesia-workstation",
+    inNav: true
   },
   {
-    slug: "branded-ICU-refurb-ventilators",
-    name: "Branded ICU Refurb ventilators",
-    navLabel: "Infant Incubator",
+    slug: "branded-icu-refurb-ventilators",
+    name: "Branded ICU Refurb Ventilators",
+    navLabel: "Refurbished ICU Ventilator",
     group: "refurb-equipments",
     image: "/images/refurb-4.jpeg",
     badges: ["Sale", "Rental"],
-    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    desc: "Fully restored and calibrated critical care ventilators from top brands, providing high-reliability performance at a fraction of the cost.",
     highlights: [
-      "Servo control ±0.1°C",
-      "Phototherapy compatible",
-      "Integrated SpO2 probe",
+      "Comprehensively tested & calibrated",
+      "Supports Volume, Pressure & Support modes",
+      "Cost-effective solution for ICU setups"
     ],
-    catalogueSlug: "infant-incubator",
-    inNav: true,
+    catalogueSlug: "branded-icu-refurb-ventilators",
+    inNav: true
   },
   {
-    slug: "neonatal-incubator",
-    name: "Neonatal Incubator",
-    navLabel: "Infant Incubator",
+    slug: "hamilton-galileo-ventilator",
+    name: "Hamilton Galileo Ventilator",
+    navLabel: "Hamilton Galileo Ventilator",
     group: "refurb-equipments",
     image: "/images/refurb-5.jpeg",
     badges: ["Sale", "Rental"],
-    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    desc: "High-end ICU ventilator designed for complex ventilation strategies, featuring Adaptive Support Ventilation (ASV) to assist patient weaning.",
     highlights: [
-      "Servo control ±0.1°C",
-      "Phototherapy compatible",
-      "Integrated SpO2 probe",
+      "Adaptive Support Ventilation (ASV)",
+      "Comprehensive monitoring parameters",
+      "Ideal for complex critical care cases"
     ],
-    catalogueSlug: "infant-incubator",
-    inNav: true,
+    catalogueSlug: "hamilton-galileo-ventilator",
+    inNav: true
   },
   {
-    slug: "neonatal-incubator",
-    name: "Neonatal Incubator",
-    navLabel: "Infant Incubator",
+    slug: "air-liquide-monnal-t75",
+    name: "Air Liquide Monnal T75",
+    navLabel: "Monnal T75 Ventilator",
     group: "refurb-equipments",
     image: "/images/refurb-6.jpeg",
     badges: ["Sale", "Rental"],
-    desc: "Closed servo-controlled incubator maintaining precise temperature and humidity for premature and low-birth-weight neonates.",
+    desc: "Compact and powerful turbine-driven ICU ventilator providing high-flow oxygen therapy, NIV, and invasive ventilation options.",
     highlights: [
-      "Servo control ±0.1°C",
-      "Phototherapy compatible",
-      "Integrated SpO2 probe",
+      "Self-contained turbine technology",
+      "Integrated High-Flow Oxygen Therapy (HFOT)",
+      "Intuitive user interface for rapid setup"
     ],
-    catalogueSlug: "infant-incubator",
-    inNav: true,
-  },
+    catalogueSlug: "air-liquide-monnal-t75",
+    inNav: true
+  }
+]
 
   /* ── Services ───────────────────────────────────────────────────────── */
   {
