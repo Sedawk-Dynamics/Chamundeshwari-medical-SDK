@@ -5,7 +5,7 @@
 // Deep model-level listings per category live in `lib/meqube-data.ts`; the
 // `catalogueSlug` field points a card at its matching category there.
 
-export type EquipmentGroup = 'icu' | 'nicu' | 'ot' | "ambulance-setup" | "home-care-services" | "refurb-equipments" | 'services' | 'bipap'
+export type EquipmentGroup = 'icu' | 'nicu' | 'ot' | "ambulance-setup" | "home-icu-setup" | "refurb-equipments" | 'services' | 'bipap'
 
 export interface EquipmentCard {
   /** Stable id — also used as the card's DOM id (`equipment-<slug>`). */
@@ -32,7 +32,7 @@ export const equipmentGroups: { key: EquipmentGroup | 'all'; label: string }[] =
   { key: 'ot', label: 'OT' },
   { key: "refurb-equipments", label: "Refurb Equipments" },
   { key: "ambulance-setup", label: "Ambulance Setup" },
-  { key: "home-care-services", label: "Home Care Services" },
+  { key: "home-icu-setup", label: "Home ICU Setup" },
   { key: 'services', label: 'Services' },
 ]
 
@@ -450,7 +450,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     slug: 'home-care',
     name: 'Home Care Services',
     navLabel: 'Home Care',
-    group: 'home-care-services',
+    group: 'home-icu-setup',
     // PLACEHOLDER IMAGE — swap for a real home-care photo when available.
     image: '/images/hero-icu.png',
     badges: ['Sale', 'Rental'],
