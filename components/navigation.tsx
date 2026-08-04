@@ -250,7 +250,7 @@ export function Navigation() {
                   )
                 )}
                 <a
-                  href="tel:+918220618897"
+                  href="tel:+918970300900"
                   className="mt-2 inline-flex items-center justify-center gap-2 bg-[#1b3a8a] hover:bg-[#0d2260] text-white py-3 rounded-full font-semibold transition-colors"
                 >
                   <Phone className="w-4 h-4" />
