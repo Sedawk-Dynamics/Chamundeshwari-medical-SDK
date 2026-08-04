@@ -80,11 +80,11 @@ export function Footer() {
                 </span>
               </div>
               <a
-                href="mailto:sales@meqube.com"
+                href="mailto:support@mrlmedisystems.com"
                 className="flex items-center gap-2 text-white/70 hover:text-[#2dc5a2] transition-colors"
               >
                 <Mail className="w-4 h-4 text-[#2dc5a2] flex-shrink-0" />
-                sales@meqube.com
+                support@mrlmedisystems.com
               </a>
               <a
                 href="tel:+918970300900"

@@ -939,23 +939,23 @@ export const meqube = {
           }
         ]
       },
-      {
-        "title": "OPERATION THEATER — CARDIO THORACIC OT",
-        "items": [
-          {
-            "name": "Heart Lung Machine",
-            "image": "/images/meqube/rental/Terumo-Sarns-8000-heart-lung-machine.jpg"
-          },
-          {
-            "name": "HEMOTHERM",
-            "image": "/images/meqube/rental/Sorin-Stockert-3T-HEMOTHERM.jpg"
-          },
-          {
-            "name": "IABP",
-            "image": "/images/meqube/rental/Maquet-Datascope-CS300-IABP.jpg"
-          }
-        ]
-      },
+      // {
+      //   "title": "OPERATION THEATER — CARDIO THORACIC OT",
+      //   "items": [
+      //     {
+      //       "name": "Heart Lung Machine",
+      //       "image": "/images/meqube/rental/Terumo-Sarns-8000-heart-lung-machine.jpg"
+      //     },
+      //     {
+      //       "name": "HEMOTHERM",
+      //       "image": "/images/meqube/rental/Sorin-Stockert-3T-HEMOTHERM.jpg"
+      //     },
+      //     {
+      //       "name": "IABP",
+      //       "image": "/images/meqube/rental/Maquet-Datascope-CS300-IABP.jpg"
+      //     }
+      //   ]
+      // },
       {
         "title": "OPERATION THEATER — GENERAL OT",
         "items": [
@@ -964,13 +964,17 @@ export const meqube = {
             "image": "/images/meqube/rental/ANESTHESIA-MACHINE1.jpg"
           },
           {
-            "name": "LAPROSCOPY EQUIPMENT",
-            "image": "/images/meqube/rental/Stryker-1088-Camera-System.jpg"
+            "name": "BUBBLE CPAP",
+            "image": "/images/meqube/rental/bubble-cpap.jpeg"
           },
-          {
-            "name": "DIATHERMY",
-            "image": "/images/meqube/rental/Covidien-Valleylab-Force-FX-C.jpg"
-          }
+          // {
+          //   "name": "LAPROSCOPY EQUIPMENT",
+          //   "image": "/images/meqube/rental/Stryker-1088-Camera-System.jpg"
+          // },
+          // {
+          //   "name": "DIATHERMY",
+          //   "image": "/images/meqube/rental/Covidien-Valleylab-Force-FX-C.jpg"
+          // }
         ]
       }
     ]
