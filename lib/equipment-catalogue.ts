@@ -553,6 +553,70 @@ export const equipmentCatalogue: EquipmentCard[] = [
   catalogueSlug: "bubble-cpap",
   inNav: true
 },
+  {
+  slug: "bubble-cpap",
+  name: "Bubble CPAP System",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-8.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "bubble-cpap",
+  inNav: true
+},
+  {
+  slug: "bubble-cpap",
+  name: "Bubble CPAP System",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-9.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "bubble-cpap",
+  inNav: true
+},
+  {
+  slug: "bubble-cpap",
+  name: "Bubble CPAP System",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-10.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "bubble-cpap",
+  inNav: true
+},
+  {
+  slug: "bubble-cpap",
+  name: "Bubble CPAP System",
+  navLabel: "Bubble CPAP",
+  group: "refurb-equipments",
+  image: "/images/refurb-11.jpeg",
+  badges: ["Sale", "Rental"],
+  desc: "Non-invasive respiratory support system designed for neonates and infants, delivering continuous positive airway pressure with humidified gas oscillations to promote lung expansion.",
+  highlights: [
+    "Integrated heated humidifier & air-oxygen blender",
+    "Precise pressure regulation via water column generator",
+    "Gentle chest wall oscillations for improved gas exchange"
+  ],
+  catalogueSlug: "bubble-cpap",
+  inNav: true
+},
 
   /* ── Services ───────────────────────────────────────────────────────── */
   {
