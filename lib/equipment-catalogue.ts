@@ -345,8 +345,8 @@ export const equipmentCatalogue: EquipmentCard[] = [
 
   /* ── Refurb Equipments ───────────────────────────────────────────────────────── */
   {
-    slug: "branded-ICU-refurb-ventilators",
-    name: "Branded ICU Refurb ventilators",
+    slug: "ge-engstrom-care-station",
+    name: "GE Engstrom Care Station",
     navLabel: "Infant Incubator",
     group: "refurb-equipments",
     image: "/images/refurb-1.jpeg",
