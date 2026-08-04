@@ -141,6 +141,29 @@ export const equipmentCatalogue: EquipmentCard[] = [
     catalogueSlug: 'pulse-oximeter',
     inNav: true,
   },
+  /* ── BiPAP (shown under "All" only — no dedicated tab) ─────────────── */
+  {
+    slug: 'bmc-bipap/cpap',
+    name: 'BMC BiPAP/CPAP',
+    navLabel: 'BMC BiPAP/CPAP',
+    group: 'icu',
+    image: '/images/meqube/products/bmc-bipap.jpeg',
+    badges: ['Sale','Rental'],
+    desc: 'Bi-level positive airway pressure therapy device for non-invasive respiratory support at home or in hospital.',
+    highlights: ['Dual pressure support', 'Compact & portable', 'Comfort breathing modes'],
+    inNav: false,
+  },
+  {
+    slug: 'philips-bipap/cpap',
+    name: 'Philips BiPAP/CPAP',
+    navLabel: 'Philips BiPAP/CPAP',
+    group: 'icu',
+    image: '/images/meqube/products/PHILIPS-RESPRONICS-SYSTEM-ONE.jpg',
+    badges: ['Sale','Rental'],
+    desc: 'Philips Respironics bi-level therapy system delivering reliable non-invasive ventilatory support with adaptive comfort features.',
+    highlights: ['Auto-adjusting pressure', 'Integrated humidification', 'Quiet operation'],
+    inNav: false,
+  },
 
   /* ── NICU ───────────────────────────────────────────────────────────── */
   {
@@ -639,30 +662,6 @@ export const equipmentCatalogue: EquipmentCard[] = [
     badges: ['Rental'],
     desc: 'Flexible short- and long-term rental of critical-care equipment — ideal for capacity expansion or trial before purchase.',
     highlights: ['Daily / monthly plans', 'Delivery & installation', 'Swap guarantee'],
-    inNav: false,
-  },
-
-  /* ── BiPAP (shown under "All" only — no dedicated tab) ─────────────── */
-  {
-    slug: 'bmc-bipap/cpap',
-    name: 'BMC BiPAP/CPAP',
-    navLabel: 'BMC BiPAP/CPAP',
-    group: 'icu',
-    image: '/images/meqube/products/bmc-bipap.jpeg',
-    badges: ['Sale','Rental'],
-    desc: 'Bi-level positive airway pressure therapy device for non-invasive respiratory support at home or in hospital.',
-    highlights: ['Dual pressure support', 'Compact & portable', 'Comfort breathing modes'],
-    inNav: false,
-  },
-  {
-    slug: 'philips-bipap/cpap',
-    name: 'Philips BiPAP/CPAP',
-    navLabel: 'Philips BiPAP/CPAP',
-    group: 'icu',
-    image: '/images/meqube/products/PHILIPS-RESPRONICS-SYSTEM-ONE.jpg',
-    badges: ['Sale','Rental'],
-    desc: 'Philips Respironics bi-level therapy system delivering reliable non-invasive ventilatory support with adaptive comfort features.',
-    highlights: ['Auto-adjusting pressure', 'Integrated humidification', 'Quiet operation'],
     inNav: false,
   },
 ]
