@@ -439,8 +439,7 @@ export const equipmentCatalogue: EquipmentCard[] = [
     ],
     catalogueSlug: "air-liquide-monnal-t75",
     inNav: true
-  }
-]
+  },
 
   /* ── Services ───────────────────────────────────────────────────────── */
   {
