@@ -963,6 +963,10 @@ export const meqube = {
             "name": "ANESTHESIA MACHINE",
             "image": "/images/meqube/rental/ANESTHESIA-MACHINE1.jpg"
           },
+          {
+            "name": "BUBBLE CPAP",
+            "image": "/images/meqube/rental/bubble-cpap.jpg"
+          },
           // {
           //   "name": "LAPROSCOPY EQUIPMENT",
           //   "image": "/images/meqube/rental/Stryker-1088-Camera-System.jpg"
