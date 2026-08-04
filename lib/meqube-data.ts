@@ -965,7 +965,7 @@ export const meqube = {
           },
           {
             "name": "BUBBLE CPAP",
-            "image": "/images/meqube/rental/bubble-cpap.jpg"
+            "image": "/images/meqube/rental/bubble-cpap.jpeg"
           },
           // {
           //   "name": "LAPROSCOPY EQUIPMENT",
