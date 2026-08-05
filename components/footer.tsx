@@ -174,7 +174,7 @@ export function Footer() {
               <p className="text-white font-display font-bold text-sm">
                 Chamundeshwari Medical Systems Pvt. Ltd.
               </p>
-              <p className="text-white/50 text-xs mt-1">CIN: (Registration Pending)</p>
+              <p className="text-white/50 text-xs mt-1">CIN: U46497KA2026PTC223877</p>
             </div>
 
             <h3 className="font-display font-bold text-white text-sm uppercase tracking-widest mb-4">

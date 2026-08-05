@@ -87,7 +87,7 @@ export function WhyUs() {
                 </div>
                 <div>
                   <p className="text-white text-xs font-semibold">Madhu Sudhan Guni</p>
-                  <p className="text-white/60 text-xs">Director, MRL Advanced Medi Systems</p>
+                  <p className="text-white/60 text-xs">Founder & CEO, MRL Advanced Medi Systems</p>
                 </div>
               </footer>
             </motion.blockquote>
