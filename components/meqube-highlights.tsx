@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 const cards = [
   {
     image: '/images/meqube/meqube-360.jpg',
-    title: 'CHAMUNDESHWARI MEDICAL 360',
+    title: 'MRL ADVANCED MEDICAL 360',
     body:
-      "Chamundeshwari Medical Systems Pvt. Ltd. specializes in international trading of refurbished medical equipment's. In addition, we offer service and maintenance of medical equipment's at high quality standard.",
+      "MRL Advanced Medical Systems Pvt. Ltd. specializes in international trading of refurbished medical equipment's. In addition, we offer service and maintenance of medical equipment's at high quality standard.",
   },
   {
     image: '/images/meqube/professionally-qualified.jpg',
