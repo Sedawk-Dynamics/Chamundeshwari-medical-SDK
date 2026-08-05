@@ -16,7 +16,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title:
-    'Chamundeshwari Medical Systems Pvt. Ltd. | MRL Advanced Medi Systems',
+    'MRL Advanced Medi Systems | Chamundeshwari Medical Systems Pvt. Ltd.',
   description:
     'Chamundeshwari Medical Systems Pvt. Ltd. — supplying, servicing and renting world-class ICU, NICU and OT equipment across India. Over 30 years of experience in critical-care medical equipment.',
   keywords:
