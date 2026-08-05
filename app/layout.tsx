@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://www.meqube.com',
     siteName: 'Chamundeshwari Medical Systems Pvt. Ltd.',
-    title: 'Chamundeshwari Medical Systems Pvt. Ltd. | MRL Advanced Medi Systems',
+    title: 'MRL Advanced Medi Systems | Chamundeshwari Medical Systems Pvt. Ltd.',
     description:
       'Supplying, servicing and renting world-class ICU, NICU and OT equipment across India.',
   },
