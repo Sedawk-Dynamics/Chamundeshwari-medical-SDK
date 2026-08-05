@@ -69,7 +69,7 @@ export function Footer() {
               className="h-16 w-auto object-contain brightness-0 invert mb-5"
             />
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Chamundeshwari Medical Systems Pvt. Ltd. — supplying, servicing and renting
+              MRL Advanced Medical Systems Pvt. Ltd. — supplying, servicing and renting
               world-class ICU, NICU and OT equipment across India.
             </p>
             <div className="flex flex-col gap-3 text-sm">
@@ -172,7 +172,7 @@ export function Footer() {
                 Registered Company
               </p>
               <p className="text-white font-display font-bold text-sm">
-                Chamundeshwari Medical Systems Pvt. Ltd.
+                MRL Advanced Medical Systems Pvt. Ltd.
               </p>
               <p className="text-white/50 text-xs mt-1">CIN: (Registration Pending)</p>
             </div>
@@ -202,7 +202,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
           <p className="text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Chamundeshwari Medical Systems Pvt. Ltd. – All
+            &copy; {new Date().getFullYear()} MRL Advanced Medical Systems Pvt. Ltd. – All
             rights Reserved
           </p>
           <p>

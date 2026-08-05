@@ -43,7 +43,7 @@ export function ExpertServices() {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section className="py-24 bg-white" aria-label="Why work with Chamundeshwari Medical Systems">
+    <section className="py-24 bg-white" aria-label="Why work with MRL Advanced Medical Systems">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Heading row */}
         <div className="grid lg:grid-cols-2 gap-8 items-center mb-16">

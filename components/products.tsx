@@ -49,7 +49,7 @@ export function Products() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mt-4 text-slate-500 max-w-2xl mx-auto text-[0.95rem]"
           >
-            Chamundeshwari Medical Systems Pvt. Ltd. specializes in international trading of refurbished
+            MRL Advanced Medical Systems Pvt. Ltd. specializes in international trading of refurbished
             medical equipment&apos;s. Browse our range across{' '}
             {productCategories.length} equipment categories.
           </motion.p>

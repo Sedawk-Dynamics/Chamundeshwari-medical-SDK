@@ -22,7 +22,7 @@ export default function HomePage() {
         <Hero />
         {/* Original about — "Delivering World-Class Medical Equipment to Bangalore and Beyond" */}
         <About />
-        {/* CHAMUNDESHWARI MEDICAL 360 / PROFESSIONALLY QUALIFIED / UNBEATABLE PRICE cards */}
+        {/* MRL ADVANCED MEDICAL 360 / PROFESSIONALLY QUALIFIED / UNBEATABLE PRICE cards */}
         <MequbeHighlights />
         <MissionVision />
         {/* Products & Services — "Equipment Built for Critical Care" (ICU / NICU / OT / Services) */}

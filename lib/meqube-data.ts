@@ -723,7 +723,7 @@ export const meqube = {
     }
   ],
   "spares": {
-    "intro": "Chamundeshwari Medical Systems Pvt. Ltd. is a ONESOURCE for all spare parts. We have a large inventory of spare for Ventilators, Anesthesia Machines, Monitors, Defibrillators. and electro surgical unit",
+    "intro": "MRL Advanced Medical Systems Pvt. Ltd. is a ONESOURCE for all spare parts. We have a large inventory of spare for Ventilators, Anesthesia Machines, Monitors, Defibrillators. and electro surgical unit",
     "categories": [
       {
         "name": "DISPLAY",
@@ -901,7 +901,7 @@ export const meqube = {
   },
   "rental": {
     "intro": [
-      "Chamundeshwari Medical Systems Pvt. Ltd. rental program is to fulfill clients capital medical equipment needs.",
+      "MRL Advanced Medical Systems Pvt. Ltd. rental program is to fulfill clients capital medical equipment needs.",
       "Its our pride in supplying the best medical equipment's from the top medical manufacturers."
     ],
     "terms": [
@@ -981,13 +981,13 @@ export const meqube = {
   },
   "services": {
     "heading": [
-      "CHAMUNDESHWARI MEDICAL SYSTEMS PVT. LTD.",
+      "MRL ADVANCED MEDICAL SYSTEMS PVT. LTD.",
       "provides a wide range of services"
     ],
     "boxes": [
       {
         "title": "MEDICAL EQUIPMENT REPAIR SERVICE",
-        "body": "Chamundeshwari Medical Systems Pvt. Ltd. offers repair services with high quality standards by our highly trained technician on time."
+        "body": "MRL Advanced Medical Systems Pvt. Ltd. offers repair services with high quality standards by our highly trained technician on time."
       },
       {
         "title": "MAINTAINANCE CONTRACT SERVICE",
@@ -995,18 +995,18 @@ export const meqube = {
       },
       {
         "title": "RENTAL SERVICES",
-        "body": "Chamundeshwari Medical Systems Pvt. Ltd. rental program is to assist medical industry with Intensive care and operation theater equipments"
+        "body": "MRL Advanced Medical Systems Pvt. Ltd. rental program is to assist medical industry with Intensive care and operation theater equipments"
       },
       {
         "title": "BIOMEDICAL TRAINING PROGRAM",
-        "body": "Chamundeshwari Medical Systems Pvt. Ltd. offer Biomedical Equipment hands on Training for Students, Biomedical Engineers , healthcare staff and to gain a comprehensive overview of the biomedical equipment handling and its operations and healthcare technology industry."
+        "body": "MRL Advanced Medical Systems Pvt. Ltd. offer Biomedical Equipment hands on Training for Students, Biomedical Engineers , healthcare staff and to gain a comprehensive overview of the biomedical equipment handling and its operations and healthcare technology industry."
       },
       {
         "title": "CALIBRATION SERVICE",
         "body": ""
       }
     ],
-    "calibrationIntro": "The Accuracy of measuring devices decalin due to normal wear and tear. It is mandatory to perform calibration at timely intervals. At Chamundeshwari Medical Systems Pvt. Ltd. we perform calibration operated by highly standardize Calibrated devices offered by FLUKE at high accuracy level.Calibration certification are as per the NABH Standards.",
+    "calibrationIntro": "The Accuracy of measuring devices decalin due to normal wear and tear. It is mandatory to perform calibration at timely intervals. At MRL Advanced Medical Systems Pvt. Ltd. we perform calibration operated by highly standardize Calibrated devices offered by FLUKE at high accuracy level.Calibration certification are as per the NABH Standards.",
     "calibrationTools": [
       "FLUKE Electrical Safety Analyzer",
       "FLUKE Vital Sign Simulator",
