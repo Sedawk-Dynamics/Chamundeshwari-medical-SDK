@@ -2,8 +2,24 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from 'lucide-react'
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Send,
+  CheckCircle2,
+  AlertCircle,
+  Download,
+  Loader2,
+  FileCheck2,
+} from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { submitToWeb3Forms } from '@/lib/web3forms'
+
+const BROCHURE_URL = '/brochure/MRL-Advanced-Medi-Systems-Company-Profile.pdf'
+const BROCHURE_FILENAME = 'MRL-Advanced-Medi-Systems-Company-Profile.pdf'
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
 const contactDetails = [
   {
@@ -32,9 +48,12 @@ const contactDetails = [
 ]
 
 type FormState = 'idle' | 'submitting' | 'success'
+type DownloadState = 'idle' | 'submitting' | 'done'
 
 export function Contact() {
   const [formState, setFormState] = useState<FormState>('idle')
+  const [downloadState, setDownloadState] = useState<DownloadState>('idle')
+  const [error, setError] = useState('')
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -43,12 +62,75 @@ export function Contact() {
     message: '',
   })
 
+  /**
+   * The brochure is gated behind the contact details: name, phone and a valid
+   * email must be filled in before the file is handed over. The message field
+   * is not required — someone may only want the brochure.
+   */
+  const handleBrochureDownload = async () => {
+    const missing: string[] = []
+    if (form.name.trim().length < 2) missing.push('full name')
+    if (form.phone.trim().length < 8) missing.push('phone number')
+    if (!EMAIL_RE.test(form.email.trim())) missing.push('email address')
+
+    if (missing.length > 0) {
+      setError(`Please fill in your ${formatList(missing)} above to download the brochure.`)
+      document.getElementById(missing[0] === 'full name' ? 'name' : missing[0] === 'phone number' ? 'phone' : 'email')?.focus()
+      return
+    }
+
+    setDownloadState('submitting')
+    setError('')
+
+    try {
+      await submitToWeb3Forms({
+        subject: `Brochure download — ${form.name}${form.organisation ? ` (${form.organisation})` : ''}`,
+        fields: {
+          'Full Name': form.name,
+          Phone: form.phone,
+          Email: form.email,
+          Organisation: form.organisation || '—',
+          Message: form.message || '—',
+          Source: 'Company brochure download',
+        },
+      })
+
+      const link = document.createElement('a')
+      link.href = BROCHURE_URL
+      link.download = BROCHURE_FILENAME
+      document.body.appendChild(link)
+      link.click()
+      link.remove()
+
+      setDownloadState('done')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+      setDownloadState('idle')
+    }
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setFormState('submitting')
-    // Simulate API call
-    await new Promise((r) => setTimeout(r, 1200))
-    setFormState('success')
+    setError('')
+
+    try {
+      await submitToWeb3Forms({
+        subject: `Quote request — ${form.name}${form.organisation ? ` (${form.organisation})` : ''}`,
+        fields: {
+          'Full Name': form.name,
+          Phone: form.phone,
+          Email: form.email || '—',
+          Organisation: form.organisation || '—',
+          Message: form.message,
+          Source: 'Contact form — Request a Quote or Product Demo',
+        },
+      })
+      setFormState('success')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+      setFormState('idle')
+    }
   }
 
   const handleChange = (
@@ -176,7 +258,7 @@ export function Contact() {
                     Thank you for reaching out. Our team will contact you within 4 business hours.
                   </p>
                   <Button
-                    onClick={() => { setFormState('idle'); setForm({ name: '', phone: '', email: '', organisation: '', message: '' }) }}
+                    onClick={() => { setFormState('idle'); setDownloadState('idle'); setError(''); setForm({ name: '', phone: '', email: '', organisation: '', message: '' }) }}
                     variant="outline"
                     className="mt-2 border-[#1b3a8a] text-[#1b3a8a] hover:bg-[#1b3a8a] hover:text-white rounded-full"
                   >
@@ -268,6 +350,16 @@ export function Contact() {
                     />
                   </div>
 
+                  {error && (
+                    <p
+                      role="alert"
+                      className="mb-4 flex items-start gap-2 text-sm text-rose-600 bg-rose-50 border border-rose-100 rounded-xl px-3 py-2"
+                    >
+                      <AlertCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />
+                      <span>{error}</span>
+                    </p>
+                  )}
+
                   <Button
                     type="submit"
                     disabled={formState === 'submitting'}
@@ -285,6 +377,59 @@ export function Contact() {
                       </>
                     )}
                   </Button>
+
+                  {/* Brochure download — unlocked once the details above are filled in */}
+                  <div className="mt-6 pt-6 border-t border-dashed border-gray-200">
+                    {downloadState === 'done' ? (
+                      <motion.div
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="flex items-start gap-3 bg-[#e8f9f6] border border-[#2dc5a2]/30 rounded-xl px-4 py-3"
+                      >
+                        <FileCheck2 className="w-5 h-5 text-[#2dc5a2] flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-sm font-semibold text-[#1b3a8a]">
+                            Your brochure download has started
+                          </p>
+                          <p className="text-xs text-slate-500 mt-0.5">
+                            Didn&apos;t get it?{' '}
+                            <a
+                              href={BROCHURE_URL}
+                              download={BROCHURE_FILENAME}
+                              className="font-semibold text-[#2dc5a2] hover:text-[#22a888] underline underline-offset-2"
+                            >
+                              Download again
+                            </a>
+                          </p>
+                        </div>
+                      </motion.div>
+                    ) : (
+                      <>
+                        <p className="text-xs text-slate-500 mb-3">
+                          Want our full company profile? Fill in your name, phone and email above,
+                          then download the brochure instantly.
+                        </p>
+                        <Button
+                          type="button"
+                          onClick={handleBrochureDownload}
+                          disabled={downloadState === 'submitting'}
+                          className="w-full bg-white border-2 border-[#2dc5a2] text-[#1b3a8a] hover:bg-[#2dc5a2] hover:text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all h-auto disabled:opacity-70"
+                        >
+                          {downloadState === 'submitting' ? (
+                            <>
+                              <Loader2 className="w-4 h-4 animate-spin" />
+                              Preparing your brochure...
+                            </>
+                          ) : (
+                            <>
+                              <Download className="w-4 h-4" />
+                              Download Company Brochure (PDF)
+                            </>
+                          )}
+                        </Button>
+                      </>
+                    )}
+                  </div>
                 </form>
               )}
             </div>
@@ -293,4 +438,10 @@ export function Contact() {
       </div>
     </section>
   )
+}
+
+/** "name", "name and phone", "name, phone and email" */
+function formatList(items: string[]): string {
+  if (items.length === 1) return items[0]
+  return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`
 }
