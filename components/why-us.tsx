@@ -46,7 +46,7 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section id="why-us" className="py-24 bg-white" aria-label="Why choose MRL Advanced Medi Systems">
+    <section id="why-us" className="py-24 bg-white" aria-label="Why choose MRL Advanced MEDI Systems">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: image */}
@@ -60,7 +60,7 @@ export function WhyUs() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#1b3a8a]/15">
               <Image
                 src="/images/hero-icu.png"
-                alt="Premium ICU setup by MRL Advanced Medi Systems"
+                alt="Premium ICU setup by MRL Advanced MEDI Systems"
                 width={640}
                 height={480}
                 className="w-full h-auto object-cover"
@@ -124,7 +124,7 @@ export function WhyUs() {
               transition={{ delay: 0.1, duration: 0.5 }}
               className="text-slate-600 leading-relaxed mb-10"
             >
-              With over 30 years of experience in the healthcare industry, MRL Advanced Medi Systems
+              With over 30 years of experience in the healthcare industry, MRL Advanced MEDI Systems
               is the partner hospitals and clinicians turn to when quality, reliability and
               responsiveness matter most.
             </motion.p>

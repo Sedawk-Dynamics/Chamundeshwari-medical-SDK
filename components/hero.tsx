@@ -23,18 +23,18 @@ const fadeUp: Variants = {
 
 type Slide =
   | {
-      id: string
-      type: 'hero'
-      image: string
-    }
+    id: string
+    type: 'hero'
+    image: string
+  }
   | {
-      id: string
-      type: 'simple'
-      image: string
-      eyebrow?: string
-      title?: string
-      lines?: string[]
-    }
+    id: string
+    type: 'simple'
+    image: string
+    eyebrow?: string
+    title?: string
+    lines?: string[]
+  }
 
 const slides: Slide[] = [
   {
@@ -174,7 +174,7 @@ export function Hero() {
                 animate="visible"
                 className="text-lg md:text-xl text-blue-100/80 leading-relaxed mb-10 max-w-2xl"
               >
-                MRL Advanced Medi Systems supplies, services and rents top-grade ICU,
+                MRL Advanced MEDI Systems supplies, services and rents top-grade ICU,
                 NICU and OT equipment to hospitals and clinics across India — ensuring
                 the highest standard of patient care.
               </motion.p>
@@ -273,9 +273,8 @@ export function Hero() {
               aria-selected={i === index}
               aria-label={`Go to slide ${i + 1}`}
               onClick={() => setIndex(i)}
-              className={`h-1.5 rounded-full transition-all ${
-                i === index ? 'w-10 bg-[#2dc5a2]' : 'w-4 bg-white/30 hover:bg-white/50'
-              }`}
+              className={`h-1.5 rounded-full transition-all ${i === index ? 'w-10 bg-[#2dc5a2]' : 'w-4 bg-white/30 hover:bg-white/50'
+                }`}
             />
           ))}
         </div>

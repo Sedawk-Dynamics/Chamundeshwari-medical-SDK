@@ -18,7 +18,7 @@ export function About() {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section id="about" className="py-24 bg-[#f4f7fb]" aria-label="About MRL Advanced Medi Systems">
+    <section id="about" className="py-24 bg-[#f4f7fb]" aria-label="About MRL Advanced MEDI Systems">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Section label */}
         <motion.div

@@ -138,7 +138,7 @@ export function Contact() {
   ) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
 
   return (
-    <section id="contact" className="py-24 bg-[#f4f7fb]" aria-label="Contact MRL Advanced Medi Systems">
+    <section id="contact" className="py-24 bg-[#f4f7fb]" aria-label="Contact MRL Advanced MEDI Systems">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-14">
@@ -216,7 +216,7 @@ export function Contact() {
               aria-label="Open Whitefield Spaces Pvt. Ltd., BEML Layout, Brookefield, Bengaluru location on Google Maps"
             >
               <iframe
-                title="MRL Advanced Medi Systems location"
+                title="MRL Advanced MEDI Systems location"
                 src="https://www.google.com/maps?q=Whitefield+Spaces+Pvt.+Ltd.%2C+8th+Main+Rd%2C+BEML+Layout+6th+Stage%2C+BEML+Layout%2C+Brookefield%2C+Bengaluru%2C+Karnataka+560066&output=embed"
                 width="100%"
                 height="100%"
