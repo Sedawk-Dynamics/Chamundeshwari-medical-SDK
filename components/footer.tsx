@@ -63,7 +63,7 @@ export function Footer() {
           >
             <Image
               src="/images/mrl-logo.png"
-              alt="MRL Advanced Medi Systems"
+              alt="MRL Advanced MEDI Systems"
               width={577}
               height={327}
               className="h-16 w-auto object-contain brightness-0 invert mb-5"

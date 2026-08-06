@@ -30,7 +30,7 @@ export function Services() {
             transition={{ delay: 0.05, duration: 0.6 }}
             className="text-3xl md:text-4xl font-display font-bold text-[#1b3a8a] text-balance"
           >
-            <span className="text-[#2dc5a2]">MRL ADVANCED MEDI SYSTEMS</span>
+            <span className="text-[#2dc5a2]">MRL Advanced MEDI Systems</span>
             <br />
             provides a wide range of services
           </motion.h2>

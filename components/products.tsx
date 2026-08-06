@@ -68,8 +68,8 @@ export function Products() {
               aria-selected={active === cat.slug}
               onClick={() => setActive(cat.slug)}
               className={`px-4 py-2 rounded-full text-[0.78rem] font-semibold uppercase tracking-wide transition-all ${active === cat.slug
-                  ? 'bg-[#1b3a8a] text-white shadow-md shadow-[#1b3a8a]/25'
-                  : 'bg-white text-slate-600 border border-gray-200 hover:border-[#1b3a8a]/30 hover:text-[#1b3a8a]'
+                ? 'bg-[#1b3a8a] text-white shadow-md shadow-[#1b3a8a]/25'
+                : 'bg-white text-slate-600 border border-gray-200 hover:border-[#1b3a8a]/30 hover:text-[#1b3a8a]'
                 }`}
             >
               {cat.label}

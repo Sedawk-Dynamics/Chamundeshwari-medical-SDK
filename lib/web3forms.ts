@@ -23,7 +23,7 @@ export async function submitToWeb3Forms({ subject, fields }: SubmitArgs): Promis
     headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
     body: JSON.stringify({
       access_key: WEB3FORMS_KEY,
-      from_name: 'MRL Advanced Medi Systems — Website',
+      from_name: 'MRL Advanced MEDI Systems — Website',
       subject,
       ...fields,
     }),

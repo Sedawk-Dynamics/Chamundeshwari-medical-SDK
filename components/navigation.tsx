@@ -16,14 +16,14 @@ const navLinks: {
   href: string
   children?: NavProductLink[]
 }[] = [
-  { label: 'Home', href: '#home' },
-  // Dropdown entries come from lib/equipment-catalogue.ts — the same source as
-  // the "Equipment Built for Critical Care" section, so the two stay in sync.
-  { label: 'Product', href: '#equipment', children: navProductLinks },
-  { label: 'Services', href: '#services' },
-  { label: 'Rental', href: '#rental' },
-  { label: 'Contact', href: '#contact' },
-]
+    { label: 'Home', href: '#home' },
+    // Dropdown entries come from lib/equipment-catalogue.ts — the same source as
+    // the "Equipment Built for Critical Care" section, so the two stay in sync.
+    { label: 'Product', href: '#equipment', children: navProductLinks },
+    { label: 'Services', href: '#services' },
+    { label: 'Rental', href: '#rental' },
+    { label: 'Contact', href: '#contact' },
+  ]
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false)
@@ -86,11 +86,10 @@ export function Navigation() {
         initial={{ y: -10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-          scrolled
+        className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrolled
             ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-navy/10'
             : 'bg-white'
-        }`}
+          }`}
       >
         <nav
           className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-20"
@@ -100,11 +99,11 @@ export function Navigation() {
           <button
             onClick={() => handleNavClick('#home')}
             className="flex items-center gap-3 focus-visible:outline-none"
-            aria-label="MRL Advanced Medi Systems — go to top"
+            aria-label="MRL Advanced MEDI Systems — go to top"
           >
             <Image
               src="/images/mrl-logo.png"
-              alt="MRL Advanced Medi Systems — Chamundeshwari Medical Systems Pvt. Ltd."
+              alt="MRL Advanced MEDI Systems — Chamundeshwari Medical Systems Pvt. Ltd."
               width={577}
               height={327}
               className="h-16 w-auto object-contain"

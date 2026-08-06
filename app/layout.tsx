@@ -16,11 +16,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title:
-    'MRL Advanced Medi Systems | Chamundeshwari Medical Systems Pvt. Ltd.',
+    'MRL Advanced MEDI Systems | Chamundeshwari Medical Systems Pvt. Ltd.',
   description:
     'Chamundeshwari Medical Systems Pvt. Ltd. — supplying, servicing and renting world-class ICU, NICU and OT equipment across India. Over 30 years of experience in critical-care medical equipment.',
   keywords:
-    'Chamundeshwari Medical Systems, MRL Advanced Medi Systems, refurbished medical equipment, ventilator, patient monitor, anesthesia machine, defibrillator, ICU NICU OT equipment, medical equipment rental, biomedical calibration',
+    'Chamundeshwari Medical Systems, MRL Advanced MEDI Systems, refurbished medical equipment, ventilator, patient monitor, anesthesia machine, defibrillator, ICU NICU OT equipment, medical equipment rental, biomedical calibration',
   authors: [{ name: 'Chamundeshwari Medical Systems Pvt. Ltd.' }],
   creator: 'Chamundeshwari Medical Systems Pvt. Ltd.',
   metadataBase: new URL('https://www.meqube.com'),
@@ -29,18 +29,18 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: 'https://www.meqube.com',
     siteName: 'Chamundeshwari Medical Systems Pvt. Ltd.',
-    title: 'MRL Advanced Medi Systems | Chamundeshwari Medical Systems Pvt. Ltd.',
+    title: 'MRL Advanced MEDI Systems | Chamundeshwari Medical Systems Pvt. Ltd.',
     description:
       'Supplying, servicing and renting world-class ICU, NICU and OT equipment across India.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chamundeshwari Medical Systems Pvt. Ltd. | MRL Advanced Medi Systems',
+    title: 'Chamundeshwari Medical Systems Pvt. Ltd. | MRL Advanced MEDI Systems',
     description:
       'Supplying, servicing and renting world-class ICU, NICU and OT equipment across India.',
   },
   icons: {
-    // MRL Advanced Medi Systems lockup, generated from /images/mrl-logo.png
+    // MRL Advanced MEDI Systems lockup, generated from /images/mrl-logo.png
     icon: [
       { url: '/favicon.ico', sizes: '16x16 32x32 48x48' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },

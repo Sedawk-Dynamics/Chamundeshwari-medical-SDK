@@ -981,13 +981,13 @@ export const meqube = {
   },
   "services": {
     "heading": [
-      "MRL ADVANCED MEDI SYSTEMS",
+      "MRL Advanced MEDI Systems",
       "provides a wide range of services"
     ],
     "boxes": [
       {
         "title": "MEDICAL EQUIPMENT REPAIR SERVICE",
-        "body": "MRL Advanced Medi Systems offers repair services with high quality standards by our highly trained technician on time."
+        "body": "MRL Advanced MEDI Systems offers repair services with high quality standards by our highly trained technician on time."
       },
       {
         "title": "MAINTAINANCE CONTRACT SERVICE",
@@ -995,11 +995,11 @@ export const meqube = {
       },
       {
         "title": "RENTAL SERVICES",
-        "body": "MRL Advanced Medi Systems rental program is to assist medical industry with Intensive care and operation theater equipments"
+        "body": "MRL Advanced MEDI Systems rental program is to assist medical industry with Intensive care and operation theater equipments"
       },
       {
         "title": "BIOMEDICAL TRAINING PROGRAM",
-        "body": "MRL Advanced Medi Systems offer Biomedical Equipment hands on Training for Students, Biomedical Engineers , healthcare staff and to gain a comprehensive overview of the biomedical equipment handling and its operations and healthcare technology industry."
+        "body": "MRL Advanced MEDI Systems offer Biomedical Equipment hands on Training for Students, Biomedical Engineers , healthcare staff and to gain a comprehensive overview of the biomedical equipment handling and its operations and healthcare technology industry."
       },
       {
         "title": "CALIBRATION SERVICE",

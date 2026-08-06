@@ -13,7 +13,7 @@ const testimonials = [
     initials: 'RK',
     stars: 5,
     quote:
-      'MRL Advanced Medi Systems has been an exceptional partner for our ICU. Their ventilators and patient monitors are of the highest quality, and their after-sales support is truly outstanding. Whenever we have had a critical equipment issue, their engineers have responded within hours — day or night. I highly recommend them to any hospital serious about patient outcomes.',
+      'MRL Advanced MEDI Systems has been an exceptional partner for our ICU. Their ventilators and patient monitors are of the highest quality, and their after-sales support is truly outstanding. Whenever we have had a critical equipment issue, their engineers have responded within hours — day or night. I highly recommend them to any hospital serious about patient outcomes.',
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const testimonials = [
     initials: 'SN',
     stars: 5,
     quote:
-      'We chose MRL Advanced Medi Systems for their transparent pricing and comprehensive AMC packages. Their rental model was perfect when we were scaling our OT capacity — we got top-tier equipment without the capital expenditure. The team is professional, punctual and incredibly responsive. We have now expanded our partnership to cover our entire biomedical fleet.',
+      'We chose MRL Advanced MEDI Systems for their transparent pricing and comprehensive AMC packages. Their rental model was perfect when we were scaling our OT capacity — we got top-tier equipment without the capital expenditure. The team is professional, punctual and incredibly responsive. We have now expanded our partnership to cover our entire biomedical fleet.',
   },
 ]
 
@@ -131,11 +131,10 @@ export function Testimonials() {
                   aria-selected={i === active}
                   aria-label={`Testimonial ${i + 1}`}
                   onClick={() => setActive(i)}
-                  className={`rounded-full transition-all ${
-                    i === active
+                  className={`rounded-full transition-all ${i === active
                       ? 'w-8 h-2 bg-[#1b3a8a]'
                       : 'w-2 h-2 bg-gray-300 hover:bg-[#1b3a8a]/40'
-                  }`}
+                    }`}
                 />
               ))}
             </div>
