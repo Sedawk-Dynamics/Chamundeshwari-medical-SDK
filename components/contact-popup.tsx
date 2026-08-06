@@ -188,7 +188,7 @@ export function ContactPopup() {
             className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
           >
             <div
-              className="pointer-events-auto w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#f4f7fb] rounded-3xl shadow-2xl relative"
+              className="pointer-events-auto w-full max-w-4xl bg-[#f4f7fb] rounded-3xl shadow-2xl relative"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
@@ -200,9 +200,9 @@ export function ContactPopup() {
                 <X className="w-4 h-4" />
               </button>
 
-              <div className="p-6 md:p-8">
+              <div className="p-5 md:p-6">
                 {/* Header */}
-                <div className="text-center mb-8">
+                <div className="text-center mb-5">
                   <div className="inline-flex items-center gap-3 mb-3">
                     <span className="w-6 h-0.5 bg-[#2dc5a2]" />
                     <span className="text-[#2dc5a2] text-xs font-semibold uppercase tracking-widest">
@@ -247,7 +247,7 @@ export function ContactPopup() {
 
                   {/* Form */}
                   <div className="lg:col-span-3">
-                    <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
                       {formState === 'success' ? (
                         <motion.div
                           initial={{ opacity: 0, scale: 0.95 }}
@@ -353,7 +353,7 @@ export function ContactPopup() {
                             </div>
                           </div>
 
-                          <div className="mb-4">
+                          <div className="mb-3">
                             <label htmlFor="popup-message" className="block text-xs font-semibold text-slate-700 mb-1">
                               Message / Equipment Required <span className="text-rose-500" aria-hidden="true">*</span>
                             </label>
@@ -361,7 +361,7 @@ export function ContactPopup() {
                               id="popup-message"
                               name="message"
                               required
-                              rows={3}
+                              rows={2}
                               value={form.message}
                               onChange={handleChange}
                               placeholder="Please describe the equipment you need, quantity, purchase/rental preference..."
