@@ -117,7 +117,7 @@ export function About() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#1b3a8a]/15">
               <Image
                 src="/images/about-team.png"
-                alt="MRL Advanced Medi Systems team"
+                alt="MRL Advanced MEDI Systems team"
                 width={640}
                 height={480}
                 className="w-full h-auto object-cover"
