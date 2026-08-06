@@ -364,7 +364,7 @@ export function ContactPopup() {
                               rows={2}
                               value={form.message}
                               onChange={handleChange}
-                              placeholder="Please describe the equipment you need, quantity, purchase/rental preference..."
+                              placeholder="Please describe the equipment you need, quantity, purchase/rental preference, and any specific requirements..."
                               className={`${inputClass} resize-none`}
                             />
                           </div>
