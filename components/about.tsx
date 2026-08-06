@@ -54,7 +54,7 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-slate-600 leading-relaxed mb-4"
             >
-              MRL Advanced Medi Systems, operating under Chamundeshwari Medical
+              MRL Advanced MEDI Systems, operating under Chamundeshwari Medical
               Systems Pvt. Ltd., is a premier healthcare equipment company
               headquartered in Whitefield, Bangalore. We supply, service and rent
               advanced medical devices to hospitals, nursing homes, clinics and
@@ -152,7 +152,7 @@ export function About() {
             >
               <p className="text-xs font-medium opacity-80">Registered</p>
               <p className="text-sm font-bold font-display leading-snug">
-                Chamundeshwari Medical Private Limited
+                Chamundeshwari Medical Systems Pvt. Ltd.
               </p>
             </motion.div>
           </motion.div>
