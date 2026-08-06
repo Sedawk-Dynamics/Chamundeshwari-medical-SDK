@@ -92,7 +92,7 @@ export function Navigation() {
           }`}
       >
         <nav
-          className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-20"
+          className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-20"
           aria-label="Main navigation"
         >
           {/* Logo */}
@@ -106,7 +106,7 @@ export function Navigation() {
               alt="MRL Advanced MEDI Systems — Chamundeshwari Medical Systems Pvt. Ltd."
               width={577}
               height={327}
-              className="h-16 w-auto object-contain"
+              className="h-12 md:h-16 w-auto object-contain"
               priority
             />
           </button>

@@ -18,7 +18,7 @@ export function About() {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section id="about" className="py-24 bg-[#f4f7fb]" aria-label="About MRL Advanced MEDI Systems">
+    <section id="about" className="py-14 md:py-24 bg-[#f4f7fb]" aria-label="About MRL Advanced MEDI Systems">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Section label */}
         <motion.div
@@ -34,7 +34,7 @@ export function About() {
           </span>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left: text */}
           <div>
             <motion.h2
@@ -112,7 +112,7 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="relative"
+            className="relative mt-8 lg:mt-0 px-4 lg:px-0"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-[#1b3a8a]/15">
               <Image
@@ -131,13 +131,13 @@ export function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4 border border-gray-100"
+              className="absolute bottom-4 left-0 lg:-bottom-6 lg:-left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3 border border-gray-100"
             >
-              <div className="w-14 h-14 rounded-xl bg-[#e8f9f6] flex items-center justify-center">
-                <span className="text-2xl font-display font-bold text-[#2dc5a2]">30+</span>
+              <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-xl bg-[#e8f9f6] flex items-center justify-center">
+                <span className="text-xl lg:text-2xl font-display font-bold text-[#2dc5a2]">30+</span>
               </div>
               <div>
-                <p className="text-[#1b3a8a] font-bold font-display text-base">Years Experience</p>
+                <p className="text-[#1b3a8a] font-bold font-display text-sm lg:text-base">Years Experience</p>
                 <p className="text-slate-500 text-xs mt-0.5">In critical care equipment</p>
               </div>
             </motion.div>
@@ -148,10 +148,10 @@ export function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="absolute -top-4 -right-4 bg-[#1b3a8a] text-white rounded-2xl shadow-xl px-4 py-3"
+              className="absolute top-4 right-0 lg:-top-4 lg:-right-4 bg-[#1b3a8a] text-white rounded-2xl shadow-xl px-3 py-2 lg:px-4 lg:py-3 max-w-[180px] lg:max-w-none"
             >
               <p className="text-xs font-medium opacity-80">Registered</p>
-              <p className="text-sm font-bold font-display leading-snug">
+              <p className="text-xs lg:text-sm font-bold font-display leading-snug">
                 Chamundeshwari Medical Systems Pvt. Ltd.
               </p>
             </motion.div>

@@ -17,7 +17,7 @@ export function Products() {
     document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
 
   return (
-    <section id="products" className="py-24 bg-[#f4f7fb]" aria-label="Products">
+    <section id="products" className="py-14 md:py-24 bg-[#f4f7fb]" aria-label="Products">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-12">
