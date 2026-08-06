@@ -6,13 +6,13 @@ import { Mail } from 'lucide-react'
 
 const team = [
   {
-    name: 'Madhu Sudhan Guni (IIMB Alumnus)',
+    name: 'Madhu Sudhan Guni',
     designation: 'Founder & CEO',
     initials: 'MG',
     color: '#1b3a8a',
     email: 'madhu@mrlmedisystems.com',
     photo: '/images/team/madhu-sudhan-guni.jpeg',
-    bio: 'Madhu leads overall business strategy and key healthcare partnerships. With deep expertise in critical-care equipment and hospital procurement, he drives MRL\'s mission of delivering world-class medical technology to institutions across India.',
+    bio: 'Madhu Sudhan Guni, IIMB Alumnus leads overall business strategy and key healthcare partnerships. With deep expertise in critical-care equipment and hospital procurement, he drives MRL\'s mission of delivering world-class medical technology to institutions across India.',
   },
   {
     name: 'Rukesh Reddy G',
