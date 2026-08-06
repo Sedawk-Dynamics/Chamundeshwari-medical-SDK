@@ -185,10 +185,10 @@ export function ContactPopup() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 16 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
+            className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 pointer-events-none"
           >
             <div
-              className="pointer-events-auto w-full max-w-4xl bg-[#f4f7fb] rounded-3xl shadow-2xl relative"
+              className="pointer-events-auto w-full max-w-4xl max-h-[92vh] overflow-y-auto bg-[#f4f7fb] rounded-2xl sm:rounded-3xl shadow-2xl relative"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
@@ -200,27 +200,27 @@ export function ContactPopup() {
                 <X className="w-4 h-4" />
               </button>
 
-              <div className="p-5 md:p-6">
+              <div className="p-4 sm:p-5 md:p-6">
                 {/* Header */}
-                <div className="text-center mb-5">
-                  <div className="inline-flex items-center gap-3 mb-3">
+                <div className="text-center mb-3 sm:mb-5">
+                  <div className="inline-flex items-center gap-3 mb-2">
                     <span className="w-6 h-0.5 bg-[#2dc5a2]" />
                     <span className="text-[#2dc5a2] text-xs font-semibold uppercase tracking-widest">
                       Get In Touch
                     </span>
                     <span className="w-6 h-0.5 bg-[#2dc5a2]" />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-display font-bold text-[#1b3a8a] text-balance">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-bold text-[#1b3a8a] text-balance">
                     Request a Quote or Product Demo
                   </h2>
-                  <p className="mt-2 text-slate-500 text-sm max-w-md mx-auto">
+                  <p className="mt-1 text-slate-500 text-xs sm:text-sm max-w-md mx-auto">
                     Our team will get back to you within 4 hours on business days.
                   </p>
                 </div>
 
-                <div className="grid lg:grid-cols-5 gap-8">
-                  {/* Contact info */}
-                  <div className="lg:col-span-2 space-y-4">
+                <div className="grid lg:grid-cols-5 gap-4 sm:gap-6 md:gap-8">
+                  {/* Contact info — hidden on mobile to save space */}
+                  <div className="hidden lg:block lg:col-span-2 space-y-4">
                     {contactDetails.map((detail) => (
                       <div key={detail.label} className="flex gap-3 group">
                         <div className="w-10 h-10 rounded-xl bg-[#e8f9f6] flex items-center justify-center flex-shrink-0 group-hover:bg-[#2dc5a2] transition-colors mt-0.5">
@@ -246,7 +246,7 @@ export function ContactPopup() {
                   </div>
 
                   {/* Form */}
-                  <div className="lg:col-span-3">
+                  <div className="col-span-full lg:col-span-3">
                     <div className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
                       {formState === 'success' ? (
                         <motion.div
@@ -289,7 +289,7 @@ export function ContactPopup() {
                           <h3 className="font-display font-bold text-[#1b3a8a] text-base mb-4">
                             Send Us a Message
                           </h3>
-                          <div className="grid sm:grid-cols-2 gap-3 mb-3">
+                          <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-2 sm:mb-3">
                             <div>
                               <label htmlFor="popup-name" className="block text-xs font-semibold text-slate-700 mb-1">
                                 Full Name <span className="text-rose-500" aria-hidden="true">*</span>
@@ -322,7 +322,7 @@ export function ContactPopup() {
                             </div>
                           </div>
 
-                          <div className="grid sm:grid-cols-2 gap-3 mb-3">
+                          <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-2 sm:mb-3">
                             <div>
                               <label htmlFor="popup-email" className="block text-xs font-semibold text-slate-700 mb-1">
                                 Email Address

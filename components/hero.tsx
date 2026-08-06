@@ -130,7 +130,7 @@ export function Hero() {
         </svg>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 md:px-8 py-24 lg:py-32 w-full">
+      <div       className="relative max-w-7xl mx-auto px-4 md:px-8 py-16 md:py-24 lg:py-32 w-full">
         <AnimatePresence mode="wait">
           {slide.type === 'hero' ? (
             <motion.div
@@ -159,7 +159,7 @@ export function Hero() {
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
-                className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight text-balance mb-6"
+                className="text-3xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight text-balance mb-4 md:mb-6"
               >
                 Premium Medical{' '}
                 <span className="text-[#2dc5a2]">Equipment</span> for{' '}
@@ -172,7 +172,7 @@ export function Hero() {
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
-                className="text-lg md:text-xl text-blue-100/80 leading-relaxed mb-10 max-w-2xl"
+                className="text-base md:text-xl text-blue-100/80 leading-relaxed mb-6 md:mb-10 max-w-2xl"
               >
                 MRL Advanced MEDI Systems supplies, services and rents top-grade ICU,
                 NICU and OT equipment to hospitals and clinics across India — ensuring
@@ -185,7 +185,7 @@ export function Hero() {
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
-                className="flex flex-col sm:flex-row gap-4 mb-16"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 md:mb-16"
               >
                 <Button
                   onClick={() => scrollTo('#equipment')}
@@ -251,10 +251,10 @@ export function Hero() {
                 </h2>
               )}
 
-              <div className="flex flex-col sm:flex-row gap-4 mt-10">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-10">
                 <a
                   href="tel:+918970300900"
-                  className="inline-flex items-center justify-center gap-2 border border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-4 rounded-full text-base font-semibold backdrop-blur-sm transition-all hover:-translate-y-0.5 w-fit"
+                  className="inline-flex items-center justify-center gap-2 border border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-4 rounded-full text-base font-semibold backdrop-blur-sm transition-all hover:-translate-y-0.5 w-full sm:w-fit"
                 >
                   <Phone className="w-4 h-4" />
                   Call Us

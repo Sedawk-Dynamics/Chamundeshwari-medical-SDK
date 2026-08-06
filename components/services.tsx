@@ -7,7 +7,7 @@ const { boxes } = meqube.services
 
 export function Services() {
   return (
-    <section id="services" className="py-24 bg-white" aria-label="Our services">
+    <section id="services" className="py-14 md:py-24 bg-white" aria-label="Our services">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="text-center mb-16">
