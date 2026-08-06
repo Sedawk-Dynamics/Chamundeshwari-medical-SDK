@@ -12,6 +12,7 @@ import { Team } from '@/components/team'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 import { WhatsAppButton } from '@/components/whatsapp-button'
+import { ContactPopup } from '@/components/contact-popup'
 
 export default function HomePage() {
   return (
@@ -39,6 +40,7 @@ export default function HomePage() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <ContactPopup />
     </>
   )
 }
