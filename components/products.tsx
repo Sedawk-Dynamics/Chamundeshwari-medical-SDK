@@ -49,7 +49,7 @@ export function Products() {
             transition={{ delay: 0.1, duration: 0.6 }}
             className="mt-4 text-slate-500 max-w-2xl mx-auto text-[0.95rem]"
           >
-            MRL Advanced Medical Systems Pvt. Ltd. specializes in international trading of refurbished
+            MRL Advanced MEDI Systems specializes in international trading of refurbished
             medical equipment&apos;s. Browse our range across{' '}
             {productCategories.length} equipment categories.
           </motion.p>
@@ -67,11 +67,10 @@ export function Products() {
               role="tab"
               aria-selected={active === cat.slug}
               onClick={() => setActive(cat.slug)}
-              className={`px-4 py-2 rounded-full text-[0.78rem] font-semibold uppercase tracking-wide transition-all ${
-                active === cat.slug
+              className={`px-4 py-2 rounded-full text-[0.78rem] font-semibold uppercase tracking-wide transition-all ${active === cat.slug
                   ? 'bg-[#1b3a8a] text-white shadow-md shadow-[#1b3a8a]/25'
                   : 'bg-white text-slate-600 border border-gray-200 hover:border-[#1b3a8a]/30 hover:text-[#1b3a8a]'
-              }`}
+                }`}
             >
               {cat.label}
             </button>

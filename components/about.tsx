@@ -152,7 +152,7 @@ export function About() {
             >
               <p className="text-xs font-medium opacity-80">Registered</p>
               <p className="text-sm font-bold font-display leading-snug">
-                MRL Advanced Medical Private Limited
+                Chamundeshwari Medical Private Limited
               </p>
             </motion.div>
           </motion.div>
