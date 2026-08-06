@@ -6,7 +6,7 @@ import { Mail } from 'lucide-react'
 
 const team = [
   {
-    name: 'Madhu Sudhan Guni',
+    name: 'Madhu Sudhan Guni (IIMB Alumnus)',
     designation: 'Founder & CEO',
     initials: 'MG',
     color: '#1b3a8a',
