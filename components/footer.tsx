@@ -69,7 +69,7 @@ export function Footer() {
               className="h-16 w-auto object-contain brightness-0 invert mb-5"
             />
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Chamundeshwari Medical Systems Pvt. Ltd. — supplying, servicing and renting
+              MRL Advanced MEDI Systems — supplying, servicing and renting
               world-class ICU, NICU and OT equipment across India.
             </p>
             <div className="flex flex-col gap-3 text-sm">
