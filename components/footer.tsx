@@ -6,10 +6,10 @@ import { Phone, Mail, MapPin } from 'lucide-react'
 import { productCategories } from '@/lib/meqube-data'
 
 // lucide-react dropped brand glyphs, so the social marks are inlined here.
-function TwitterIcon(props: React.SVGProps<SVGSVGElement>) {
+function XIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 9.99 9.99 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
     </svg>
   )
 }
@@ -30,6 +30,14 @@ function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
   )
 }
 
+function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z" />
+    </svg>
+  )
+}
+
 const quickLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Product', href: '#equipment' },
@@ -39,9 +47,10 @@ const quickLinks = [
 ]
 
 const socials = [
-  { label: 'Twitter', href: 'https://twitter.com', icon: TwitterIcon },
-  { label: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
-  { label: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
+  { label: 'Twitter', href: 'https://x.com/mrlmedisystems', icon: XIcon },
+  { label: 'Facebook', href: 'https://www.facebook.com/mrlmedisystems/', icon: FacebookIcon },
+  { label: 'Instagram', href: 'https://www.instagram.com/mrlmedisystems/', icon: InstagramIcon },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/mrl-advanced-medi-systems/', icon: LinkedInIcon },
 ]
 
 export function Footer() {
