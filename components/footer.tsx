@@ -39,9 +39,10 @@ const quickLinks = [
 ]
 
 const socials = [
-  { label: 'Twitter', href: 'https://twitter.com', icon: TwitterIcon },
-  { label: 'Facebook', href: 'https://facebook.com', icon: FacebookIcon },
-  { label: 'Instagram', href: 'https://instagram.com', icon: InstagramIcon },
+  { label: 'Twitter', href: 'https://x.com/mrlmedisystems', icon: TwitterIcon },
+  { label: 'Facebook', href: 'https://www.facebook.com/mrlmedisystems/', icon: FacebookIcon },
+  { label: 'Instagram', href: 'https://www.instagram.com/mrlmedisystems/', icon: InstagramIcon },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/mrl-advanced-medi-systems/', icon: LinkedInIcon },
 ]
 
 export function Footer() {
