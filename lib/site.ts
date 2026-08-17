@@ -43,7 +43,7 @@ export const VERIFICATION: {
   bing: string
   facebookDomain: string
 } = {
-  google: '',
+  google: 'vEU-MJcpJfBknbz1rH7w4AROmAvcNwPonEWs0lC2mac',
   bing: '',
   facebookDomain: '',
 }
