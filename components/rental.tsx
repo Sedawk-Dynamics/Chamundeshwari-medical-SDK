@@ -1,8 +1,9 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { CalendarClock, CalendarRange, CheckCircle2 } from 'lucide-react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { CalendarClock, CalendarRange, CheckCircle2, ChevronDown } from 'lucide-react'
 import { meqube } from '@/lib/meqube-data'
 
 const { intro, terms, benefits, groups } = meqube.rental
@@ -10,6 +11,8 @@ const { intro, terms, benefits, groups } = meqube.rental
 const termIcons = [CalendarClock, CalendarRange]
 
 export function Rental() {
+  const [openGroup, setOpenGroup] = useState<string | null>(null)
+
   return (
     <section id="rental" className="py-24 bg-[#f4f7fb]" aria-label="Equipment rental">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -104,46 +107,82 @@ export function Rental() {
           RENTAL CATAGORIES
         </motion.h3>
 
-        <div className="space-y-12">
-          {groups.map((group) => (
-            <div key={group.title}>
-              <motion.h4
+        <div className="space-y-4">
+          {groups.map((group) => {
+            const isOpen = openGroup === group.title
+            const panelId = `rental-${group.title.replace(/[^a-z0-9]+/gi, '-').toLowerCase()}`
+
+            return (
+              <motion.div
+                key={group.title}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-3 text-sm font-semibold uppercase tracking-widest text-[#2dc5a2] mb-6"
+                className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
               >
-                <span className="w-8 h-0.5 bg-[#2dc5a2]" />
-                {group.title}
-              </motion.h4>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-                {group.items.map((item, i) => (
-                  <motion.article
-                    key={item.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.45, delay: (i % 5) * 0.07 }}
-                    className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl hover:shadow-[#1b3a8a]/10 transition-all hover:-translate-y-1.5"
-                  >
-                    <div className="relative h-40 overflow-hidden bg-white">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        fill
-                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="px-4 py-4 text-center">
-                      <h5 className="font-display font-bold text-[#1b3a8a] text-[0.8rem] uppercase tracking-wide">
-                        {item.name}
-                      </h5>
-                    </div>
-                  </motion.article>
-                ))}
-              </div>
-            </div>
-          ))}
+                <button
+                  type="button"
+                  onClick={() => setOpenGroup(isOpen ? null : group.title)}
+                  aria-expanded={isOpen}
+                  aria-controls={panelId}
+                  className="w-full flex items-center gap-3 px-5 md:px-7 py-5 text-left hover:bg-[#f4f7fb] transition-colors"
+                >
+                  <span className="w-8 h-0.5 bg-[#2dc5a2] flex-shrink-0" />
+                  <span className="flex-1 text-sm font-semibold uppercase tracking-widest text-[#2dc5a2]">
+                    {group.title}
+                  </span>
+                  <span className="text-xs text-slate-400 hidden sm:inline">
+                    {group.items.length} items
+                  </span>
+                  <ChevronDown
+                    className={`w-5 h-5 text-[#1b3a8a] flex-shrink-0 transition-transform duration-300 ${
+                      isOpen ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      id={panelId}
+                      key="panel"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.35, ease: 'easeInOut' }}
+                      className="overflow-hidden"
+                    >
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 px-5 md:px-7 pb-7 pt-1">
+                        {group.items.map((item, i) => (
+                          <motion.article
+                            key={item.name}
+                            initial={{ opacity: 0, y: 16 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.35, delay: (i % 5) * 0.06 }}
+                            className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl hover:shadow-[#1b3a8a]/10 transition-all hover:-translate-y-1.5"
+                          >
+                            <div className="relative h-40 overflow-hidden bg-white">
+                              <Image
+                                src={item.image}
+                                alt={item.name}
+                                fill
+                                className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                              />
+                            </div>
+                            <div className="px-4 py-4 text-center">
+                              <h5 className="font-display font-bold text-[#1b3a8a] text-[0.8rem] uppercase tracking-wide">
+                                {item.name}
+                              </h5>
+                            </div>
+                          </motion.article>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            )
+          })}
         </div>
       </div>
     </section>
