@@ -29,6 +29,8 @@ export function BrochureModal({ open, onClose, source }: Props) {
   const [state, setState] = useState<State>('idle')
   const [error, setError] = useState('')
   const [form, setForm] = useState({ name: '', phone: '', email: '', organisation: '' })
+  // Hidden from humans; only bots fill it in. See submitToWeb3Forms.
+  const [botcheck, setBotcheck] = useState('')
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
@@ -86,12 +88,19 @@ export function BrochureModal({ open, onClose, source }: Props) {
     try {
       await submitToWeb3Forms({
         subject: `Brochure download — ${form.name}${form.organisation ? ` (${form.organisation})` : ''}`,
+        replyTo: form.email.trim(),
+        botcheck,
         fields: {
-          'Full Name': form.name,
-          Phone: form.phone,
-          Email: form.email,
-          Organisation: form.organisation || '—',
+          'Full Name': form.name.trim(),
+          Phone: form.phone.trim(),
+          Email: form.email.trim(),
+          Organisation: form.organisation.trim() || '—',
           Source: source,
+          'Submitted At': new Date().toLocaleString('en-IN', {
+            timeZone: 'Asia/Kolkata',
+            dateStyle: 'medium',
+            timeStyle: 'short',
+          }),
         },
       })
 
@@ -187,6 +196,19 @@ export function BrochureModal({ open, onClose, source }: Props) {
                     <p className="text-slate-500 text-sm mb-5">
                       Share your details and the PDF downloads instantly.
                     </p>
+
+                    {/* Honeypot — hidden from people and screen readers, so
+                        anything that fills it in is a bot. */}
+                    <input
+                      type="checkbox"
+                      name="botcheck"
+                      checked={Boolean(botcheck)}
+                      onChange={(e) => setBotcheck(e.target.checked ? 'bot' : '')}
+                      className="hidden"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      aria-hidden="true"
+                    />
 
                     <div className="grid sm:grid-cols-2 gap-3 mb-3">
                       <div>
