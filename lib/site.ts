@@ -4,7 +4,7 @@
  * Open Graph and JSON-LD all follow automatically.
  */
 
-export const SITE_URL = 'https://mrlmedisystems.com'
+export const SITE_URL = 'https://www.mrlmedisystems.com'
 
 export const LEGAL_NAME = 'Chamundeshwari Medical Systems Pvt. Ltd.'
 export const BRAND_NAME = 'MRL Advanced MEDI Systems'

@@ -4,7 +4,19 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Mail } from 'lucide-react'
 
-const team = [
+type Member = {
+  name: string
+  designation: string
+  initials: string
+  color: string
+  email: string
+  photo: string
+  /** object-position for the avatar crop; defaults to 'center' */
+  objectPosition?: string
+  bio: string
+}
+
+const team: Member[] = [
   {
     name: 'Madhu Sudhan Guni',
     designation: 'Founder & CEO',
@@ -20,7 +32,8 @@ const team = [
     initials: 'RR',
     color: '#2dc5a2',
     email: 'rukesh@mrlmedisystems.com',
-    photo: '/images/team/rukesh-reddy-g.jpeg',
+    photo: '/images/team/rukesh-reddy-g.png',
+    objectPosition: 'center 12%',
     bio: 'Rukesh oversees technical operations, service delivery and biomedical engineering. His hands-on approach ensures every installation meets clinical standards and that after-sales support consistently exceeds client expectations.',
   },
   {
@@ -97,6 +110,7 @@ export function Team() {
                       width={96}
                       height={96}
                       className="w-full h-full object-cover"
+                      style={{ objectPosition: member.objectPosition ?? 'center' }}
                     />
                   </div>
                 ) : (
