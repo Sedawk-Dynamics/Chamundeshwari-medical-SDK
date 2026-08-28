@@ -102,7 +102,7 @@ export function Team() {
                 {member.photo ? (
                   <div
                     className="w-24 h-24 rounded-full overflow-hidden shadow-lg ring-4 ring-white"
-                    style={{ boxShadow: `0 0 0 2px ${member.color}` }}
+                    style={{ boxShadow: '0 0 0 2px #000' }}
                   >
                     <Image
                       src={member.photo}
