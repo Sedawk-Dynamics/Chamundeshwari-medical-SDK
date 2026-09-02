@@ -1,9 +1,12 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { productCategories } from '@/lib/meqube-data'
+import { legalDocuments } from '@/lib/legal-content'
 
 // lucide-react dropped brand glyphs, so the social marks are inlined here.
 function XIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -54,7 +57,16 @@ const socials = [
 ]
 
 export function Footer() {
+  const pathname = usePathname()
+  const router = useRouter()
+
+  // The section anchors only exist on the home page, so from a policy page the
+  // same links have to route back to "/" and let the browser land on the hash.
   const scrollTo = (href: string) => {
+    if (pathname !== '/') {
+      router.push(`/${href}`)
+      return
+    }
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -204,6 +216,29 @@ export function Footer() {
               ))}
             </div>
           </motion.div>
+        </div>
+      </div>
+
+      {/* Legal / policy links */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-5">
+          <nav aria-label="Legal">
+            <ul
+              className="flex flex-wrap items-center justify-center sm:justify-start gap-x-6 gap-y-2.5"
+              role="list"
+            >
+              {legalDocuments.map((doc) => (
+                <li key={doc.slug}>
+                  <Link
+                    href={`/${doc.slug}`}
+                    className="text-white/60 hover:text-[#2dc5a2] text-sm transition-colors"
+                  >
+                    {doc.navLabel}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
 

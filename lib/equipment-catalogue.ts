@@ -39,6 +39,13 @@ export const equipmentGroups: { key: EquipmentGroup | 'all'; label: string }[] =
 /** Fired by the header dropdown so the section can filter + scroll to a card. */
 export const EQUIPMENT_FILTER_EVENT = 'equipment:filter'
 
+/**
+ * sessionStorage key used when the dropdown is opened from a page that has no
+ * equipment section (a policy page): the choice is parked here and applied once
+ * the home page mounts.
+ */
+export const PENDING_EQUIPMENT_FILTER_KEY = 'equipment:pending-filter'
+
 export interface EquipmentFilterDetail {
   group: EquipmentGroup
   slug: string

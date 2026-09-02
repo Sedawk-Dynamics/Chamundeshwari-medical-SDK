@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import { usePathname, useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Phone, Mail, Menu, X, ChevronDown } from 'lucide-react'
 import {
   EQUIPMENT_FILTER_EVENT,
+  PENDING_EQUIPMENT_FILTER_KEY,
   navProductLinks,
   type EquipmentFilterDetail,
   type NavProductLink,
@@ -26,6 +28,8 @@ const navLinks: {
   ]
 
 export function Navigation() {
+  const pathname = usePathname()
+  const router = useRouter()
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileProductOpen, setMobileProductOpen] = useState(false)
@@ -37,25 +41,48 @@ export function Navigation() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const handleNavClick = (href: string) => {
+  const closeMenus = () => {
     setMobileOpen(false)
     setMobileProductOpen(false)
     setActiveDropdown(null)
+  }
+
+  // The section anchors only exist on the home page, so from a policy page the
+  // same links have to route back to "/" and let the browser land on the hash.
+  const handleNavClick = (href: string) => {
+    closeMenus()
+    if (pathname !== '/') {
+      router.push(`/${href}`)
+      return
+    }
     const el = document.querySelector(href)
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
   // Product dropdown: let the Products & Services section filter to the chosen
-  // category and scroll the matching card into view.
+  // category and scroll the matching card into view. Off the home page the
+  // choice is parked in sessionStorage and picked up after the route change.
   const handleProductClick = (product: NavProductLink) => {
-    setMobileOpen(false)
-    setMobileProductOpen(false)
-    setActiveDropdown(null)
+    closeMenus()
 
     const detail: EquipmentFilterDetail = {
       group: product.group,
       slug: product.slug,
     }
+
+    if (pathname !== '/') {
+      try {
+        sessionStorage.setItem(
+          PENDING_EQUIPMENT_FILTER_KEY,
+          JSON.stringify(detail)
+        )
+      } catch {
+        // Private mode / blocked storage — the section still opens unfiltered.
+      }
+      router.push('/#equipment')
+      return
+    }
+
     window.dispatchEvent(
       new CustomEvent<EquipmentFilterDetail>(EQUIPMENT_FILTER_EVENT, { detail })
     )

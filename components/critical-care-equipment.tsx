@@ -7,6 +7,7 @@ import { ArrowRight, Tag, Wrench, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   EQUIPMENT_FILTER_EVENT,
+  PENDING_EQUIPMENT_FILTER_KEY,
   equipmentCatalogue,
   equipmentGroups,
   type EquipmentFilterDetail,
@@ -36,8 +37,7 @@ export function CriticalCareEquipment() {
   // The header Product dropdown targets a specific card: switch to its tab,
   // then scroll it into view and briefly ring it so it is easy to spot.
   useEffect(() => {
-    const onFilter = (event: Event) => {
-      const { group, slug } = (event as CustomEvent<EquipmentFilterDetail>).detail
+    const applyFilter = ({ group, slug }: EquipmentFilterDetail) => {
       setActiveTab(group)
       setSpotlight(slug)
 
@@ -51,7 +51,23 @@ export function CriticalCareEquipment() {
       })
     }
 
+    const onFilter = (event: Event) =>
+      applyFilter((event as CustomEvent<EquipmentFilterDetail>).detail)
+
     window.addEventListener(EQUIPMENT_FILTER_EVENT, onFilter)
+
+    // The dropdown was used on a page without this section (e.g. a policy
+    // page); it parked the choice before routing here.
+    try {
+      const pending = sessionStorage.getItem(PENDING_EQUIPMENT_FILTER_KEY)
+      if (pending) {
+        sessionStorage.removeItem(PENDING_EQUIPMENT_FILTER_KEY)
+        applyFilter(JSON.parse(pending) as EquipmentFilterDetail)
+      }
+    } catch {
+      // Unreadable or blocked storage — the section just stays unfiltered.
+    }
+
     return () => window.removeEventListener(EQUIPMENT_FILTER_EVENT, onFilter)
   }, [])
 
